@@ -12,6 +12,11 @@
 		AC143C092BB6C98C00EEC76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC143C082BB6C98C00EEC76C /* Assets.xcassets */; };
 		AC143C0C2BB6C98C00EEC76C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC143C0B2BB6C98C00EEC76C /* Preview Assets.xcassets */; };
 		AC143C142BB6D34A00EEC76C /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C132BB6D34A00EEC76C /* Homepage.swift */; };
+		E4366A5E2BB6DE2C00FBC5D1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A5A2BB6DE2C00FBC5D1 /* HomeScreen.swift */; };
+		E4366A5F2BB6DE2C00FBC5D1 /* LoanDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A5B2BB6DE2C00FBC5D1 /* LoanDetails.swift */; };
+		E4366A602BB6DE2C00FBC5D1 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A5C2BB6DE2C00FBC5D1 /* ProfileScreen.swift */; };
+		E4366A652BB6F05800FBC5D1 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */; };
+		E4366A682BB6F10000FBC5D1 /* PlatformList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A672BB6F10000FBC5D1 /* PlatformList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		AC143C082BB6C98C00EEC76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC143C0B2BB6C98C00EEC76C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC143C132BB6D34A00EEC76C /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		E4366A5A2BB6DE2C00FBC5D1 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E4366A5B2BB6DE2C00FBC5D1 /* LoanDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetails.swift; sourceTree = "<group>"; };
+		E4366A5C2BB6DE2C00FBC5D1 /* ProfileScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		E4366A672BB6F10000FBC5D1 /* PlatformList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +63,11 @@
 		AC143C032BB6C98B00EEC76C /* FinSmart */ = {
 			isa = PBXGroup;
 			children = (
-				AC143C122BB6D33700EEC76C /* Pages */,
 				AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */,
+				E4366A5D2BB6DE2C00FBC5D1 /* Home, Profile, Loan Details */,
+				E4366A662BB6F0E400FBC5D1 /* P2P Platform List */,
+				E4366A612BB6EEC200FBC5D1 /* TabView */,
+				AC143C122BB6D33700EEC76C /* Pages */,
 				AC143C062BB6C98B00EEC76C /* ContentView.swift */,
 				AC143C082BB6C98C00EEC76C /* Assets.xcassets */,
 				AC143C0A2BB6C98C00EEC76C /* Preview Content */,
@@ -76,6 +89,32 @@
 				AC143C132BB6D34A00EEC76C /* Homepage.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		E4366A5D2BB6DE2C00FBC5D1 /* Home, Profile, Loan Details */ = {
+			isa = PBXGroup;
+			children = (
+				E4366A5A2BB6DE2C00FBC5D1 /* HomeScreen.swift */,
+				E4366A5C2BB6DE2C00FBC5D1 /* ProfileScreen.swift */,
+				E4366A5B2BB6DE2C00FBC5D1 /* LoanDetails.swift */,
+			);
+			path = "Home, Profile, Loan Details";
+			sourceTree = "<group>";
+		};
+		E4366A612BB6EEC200FBC5D1 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		E4366A662BB6F0E400FBC5D1 /* P2P Platform List */ = {
+			isa = PBXGroup;
+			children = (
+				E4366A672BB6F10000FBC5D1 /* PlatformList.swift */,
+			);
+			path = "P2P Platform List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4366A5E2BB6DE2C00FBC5D1 /* HomeScreen.swift in Sources */,
+				E4366A602BB6DE2C00FBC5D1 /* ProfileScreen.swift in Sources */,
+				E4366A5F2BB6DE2C00FBC5D1 /* LoanDetails.swift in Sources */,
+				E4366A652BB6F05800FBC5D1 /* BottomTabView.swift in Sources */,
 				AC143C142BB6D34A00EEC76C /* Homepage.swift in Sources */,
 				AC143C072BB6C98B00EEC76C /* ContentView.swift in Sources */,
+				E4366A682BB6F10000FBC5D1 /* PlatformList.swift in Sources */,
 				AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

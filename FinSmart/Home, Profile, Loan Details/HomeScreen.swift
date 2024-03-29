@@ -81,7 +81,6 @@ struct HomeScreen: View {
 								)
 						}
 					}
-					.font(.callout)
 				}
 				.padding()
 				
