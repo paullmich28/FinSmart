@@ -11,6 +11,7 @@
 		AC143C072BB6C98B00EEC76C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C062BB6C98B00EEC76C /* ContentView.swift */; };
 		AC143C092BB6C98C00EEC76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC143C082BB6C98C00EEC76C /* Assets.xcassets */; };
 		AC143C0C2BB6C98C00EEC76C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC143C0B2BB6C98C00EEC76C /* Preview Assets.xcassets */; };
+		AC143C142BB6D34A00EEC76C /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C132BB6D34A00EEC76C /* Homepage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC143C062BB6C98B00EEC76C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC143C082BB6C98C00EEC76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC143C0B2BB6C98C00EEC76C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC143C132BB6D34A00EEC76C /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		AC143C032BB6C98B00EEC76C /* FinSmart */ = {
 			isa = PBXGroup;
 			children = (
+				AC143C122BB6D33700EEC76C /* Pages */,
 				AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */,
 				AC143C062BB6C98B00EEC76C /* ContentView.swift */,
 				AC143C082BB6C98C00EEC76C /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				AC143C0B2BB6C98C00EEC76C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC143C122BB6D33700EEC76C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AC143C132BB6D34A00EEC76C /* Homepage.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC143C142BB6D34A00EEC76C /* Homepage.swift in Sources */,
 				AC143C072BB6C98B00EEC76C /* ContentView.swift in Sources */,
 				AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */,
 			);
