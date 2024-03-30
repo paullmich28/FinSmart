@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC08CC972BB84B0100EE7800 /* PlatformListProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */; };
 		AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */; };
 		AC143C072BB6C98B00EEC76C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C062BB6C98B00EEC76C /* ContentView.swift */; };
 		AC143C092BB6C98C00EEC76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC143C082BB6C98C00EEC76C /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformListProjection.swift; sourceTree = "<group>"; };
 		AC143C012BB6C98B00EEC76C /* FinSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartApp.swift; sourceTree = "<group>"; };
 		AC143C062BB6C98B00EEC76C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				ACBAC8A12BB7D0070013CFB4 /* FinanceSummary.swift */,
+				AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */,
 			);
 			path = "Add Loan";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				E4366A5E2BB6DE2C00FBC5D1 /* HomeScreen.swift in Sources */,
 				ACBAC8A82BB7D2740013CFB4 /* Platform.swift in Sources */,
 				E4366A602BB6DE2C00FBC5D1 /* ProfileScreen.swift in Sources */,
+				AC08CC972BB84B0100EE7800 /* PlatformListProjection.swift in Sources */,
 				E4366A5F2BB6DE2C00FBC5D1 /* LoanDetails.swift in Sources */,
 				E4366A652BB6F05800FBC5D1 /* BottomTabView.swift in Sources */,
 				ACBAC89D2BB7CAB90013CFB4 /* NotificationList.swift in Sources */,
