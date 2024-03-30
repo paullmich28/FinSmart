@@ -70,6 +70,16 @@ struct LoanDetails: View {
 						
 						Divider().padding(5)
 						
+						VStack (alignment: .leading) {
+							Text("Loan Amount")
+								.font(.callout)
+							Text("IDR 1.000.000")
+								.font(.title3)
+						}
+						.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+						
+						Divider().padding(5)
+						
 						HStack {
 							VStack (alignment: .leading) {
 								Text("Start date")
@@ -78,6 +88,8 @@ struct LoanDetails: View {
 									.font(.title3)
 							}
 							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							
+							Divider().padding(.horizontal, 10)
 							
 							VStack (alignment: .trailing) {
 								Text("Next due date")
@@ -108,29 +120,43 @@ struct LoanDetails: View {
 						
 						Divider().padding(5)
 						
-						VStack (alignment: .leading) {
-							Text("Total loan amount")
-								.font(.callout)
-							Text("IDR 1.000.000")
-								.font(.title3)
-						}
-						.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-						
-						Divider().padding(5)
-						
 						HStack {
 							VStack (alignment: .leading) {
 								Text("Installment")
 									.font(.callout)
-								Text("IDR 88.333")
+								Text("IDR 89.000")
 									.font(.title3)
 							}
 							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							
+							Divider().padding(.horizontal, 10)
 							
 							VStack (alignment: .trailing) {
 								Text("For")
 									.font(.callout)
 								Text("12 Months")
+									.font(.title3)
+							}
+							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+						}
+						
+						Divider().padding(5)
+						
+						HStack {
+							VStack (alignment: .leading) {
+								Text("Has Paid")
+									.font(.callout)
+								Text("IDR 267.000")
+									.font(.title3)
+							}
+							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							
+							Divider().padding(.horizontal, 10)
+							
+							VStack (alignment: .trailing) {
+								Text("Remaining")
+									.font(.callout)
+								Text("IDR 733.000")
 									.font(.title3)
 							}
 							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
@@ -154,7 +180,7 @@ struct LoanDetails: View {
 						.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
 				})
 				.padding()
-				.background(RoundedRectangle(cornerRadius: 10))
+				.background(RoundedRectangle(cornerRadius: 30))
 				.foregroundStyle(Color.blue)
 			}
 			.padding()
