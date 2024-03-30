@@ -16,7 +16,7 @@ struct BottomTabView: View {
 						Label("Home", systemImage: "house")
 					}
 				
-				Text("Add Loan Page")
+				FinanceSummary()
 					.tabItem {
 						Label("Add Loan", systemImage: "plus")
 					}
