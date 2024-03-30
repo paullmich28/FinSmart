@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    let categories = ["A-Z", "Date", "Amount", "Platform", "Progress"]
+    let categories = ["Ongoing", "Paid", "Completed"]
     
     var body: some View {
         NavigationStack {
@@ -74,21 +74,18 @@ struct HomeScreen: View {
                     )
                 }
                 .foregroundStyle(Color.black)
-                .padding(.bottom, 10)
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack() {
-                        ForEach(categories, id: \.self) {filter in
-                            Text(filter)
-                                .font(.callout)
-                                .padding(.horizontal, 20)
-                                .padding(.vertical, 3)
-                                .background(RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color.gray).opacity(0.2)
-                                )
-                        }
-                    }
-                }
+				HStack() {
+					ForEach(categories, id: \.self) {filter in
+						Text(filter)
+							.font(.callout)
+							.padding(.horizontal, 20)
+							.padding(.vertical, 3)
+							.background(RoundedRectangle(cornerRadius: 10)
+							.fill(Color.gray).opacity(0.2)
+							)
+					}
+				}
                 .padding()
                 
                 ScrollView {
