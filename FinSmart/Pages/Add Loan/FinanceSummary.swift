@@ -77,6 +77,18 @@ struct FinanceSummary: View {
             .padding()
             
             Spacer()
+            
+            NavigationLink(destination: PlatformListProjection()){
+                Text("Start Making Loan Projection")
+                    .font(.title3)
+            }
+            .buttonStyle(PlainButtonStyle())
+            .padding()
+            .background(RoundedRectangle(cornerRadius: 10)
+                .fill(.gray)
+                .shadow(radius: 3)
+            )
+            .offset(y: -50.0)
         }
     }
 }
