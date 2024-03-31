@@ -15,4 +15,20 @@
         "limit": 80000000,
         "latenessFee": 5.0
     }
+    {
+        "id": 3,
+        "name": "KonohaDana",
+        "interestRate": 0.4,
+        "adminFee": 2.0,
+        "limit": 60000000,
+        "latenessFee": 5.0
+    },
+    {
+        "id": 4,
+        "name": "HardCash",
+        "interestRate": 0.4,
+        "adminFee": 1.0,
+        "limit": 100000000,
+        "latenessFee": 5.0
+    }
 ]
