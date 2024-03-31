@@ -9,7 +9,12 @@ import SwiftUI
 
 struct PlatformList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List(platforms){platform in
+                PlatformRows(platform: platform)
+            }
+            .navigationTitle("P2P List")
+        }
     }
 }
 

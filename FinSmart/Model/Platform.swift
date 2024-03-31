@@ -11,13 +11,13 @@ import SwiftUI
 struct Platform: Hashable, Codable, Identifiable{
     var id: Int
     var name: String
-    var interestRate: Float
-    var adminFee: Float
+    var interestRate: Double
+    var adminFee: Double
     var limit: Int
-    var latenessFee: Float
+    var latenessFee: Double
     
-    private var logoUrl: String
-    var logo: Image{
-        Image(logoUrl)
-    }
+//    private var logoUrl: String
+//    var logo: Image{
+//        Image(logoUrl)
+//    }
 }
