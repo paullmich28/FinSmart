@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct Settings: View {
+    @State var isNotif = false
     var body: some View {
-        Text("Settings")
+        VStack(alignment: .leading){
+            Text("Settings").font(.headline)
+            HStack{
+                Toggle(isOn: $isNotif) {
+                    Text("Notifications").font(.title3)
+                }
+            }
+        }.padding(20)
+        Spacer()
     }
 }
 
