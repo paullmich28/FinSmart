@@ -14,7 +14,7 @@
         "adminFee": 4.0,
         "limit": 80000000,
         "latenessFee": 5.0
-    }
+    },
     {
         "id": 3,
         "name": "KonohaDana",
