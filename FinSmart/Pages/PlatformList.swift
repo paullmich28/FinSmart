@@ -11,7 +11,9 @@ struct PlatformList: View {
     var body: some View {
         NavigationView{
             List(platforms){platform in
-                PlatformRows(platform: platform)
+                NavigationLink(destination: PlatformDetail(platform: platform)){
+                    PlatformRows(platform: platform)
+                }
             }
             .navigationTitle("P2P List")
         }

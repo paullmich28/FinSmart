@@ -13,11 +13,10 @@ struct PlatformRows: View {
     var body: some View {
         HStack{
             Text(platform.name)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.title2)
             Spacer()
         }
         .padding()
-        
     }
 }
 
