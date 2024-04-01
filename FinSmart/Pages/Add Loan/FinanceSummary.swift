@@ -85,7 +85,7 @@ struct FinanceSummary: View {
             .buttonStyle(PlainButtonStyle())
             .padding()
             .background(RoundedRectangle(cornerRadius: 10)
-                .fill(.gray)
+                .fill(.bar)
                 .shadow(radius: 3)
             )
             .offset(y: -50.0)

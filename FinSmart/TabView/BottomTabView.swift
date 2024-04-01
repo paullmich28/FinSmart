@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BottomTabView: View {
+    @State private var isTabViewHidden = false
+    
     var body: some View {
 		TabView {
 			Group {

@@ -14,7 +14,10 @@ struct PlatformList: View {
                 NavigationLink(destination: PlatformDetail(platform: platform)){
                     PlatformRows(platform: platform)
                 }
+                .listRowBackground(Color.orange)
             }
+            .background(.white)
+            .scrollContentBackground(.hidden)
             .navigationTitle("P2P List")
         }
     }

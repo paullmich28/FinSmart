@@ -9,7 +9,21 @@ import SwiftUI
 
 struct PlatformListProjection: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack{
+                ProgressView(value: 3, total: 12)
+                List(platforms){platform in
+                    NavigationLink(destination: PlatformDetailProjection(platform: platform)){
+                        PlatformRows(platform: platform)
+                    }
+                    .listRowBackground(Color.orange)
+                }
+                .background(.white)
+                .scrollContentBackground(.hidden)
+                .navigationTitle("P2P List")
+            }.padding()
+            
+        }
     }
 }
 
