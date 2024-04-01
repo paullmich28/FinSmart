@@ -136,9 +136,8 @@ struct HomeScreen: View {
                 
             }
             .padding()
+            Spacer()
         }
-        Spacer()
-        
     }
 }
 
