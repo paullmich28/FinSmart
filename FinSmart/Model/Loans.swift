@@ -11,7 +11,11 @@ import SwiftUI
 struct Loans: Hashable, Codable, Identifiable{
     var id: Int
     var name: String
-    var amount: Int
-    var platform: String
-    var dueDate: Int
+    var loanAmount: Int
+    var loanedFrom: String
+    var startDate: String
+    var dueDate: String
+    var installmentPeriod: Int
+    var hasPaid: Int
+    var lastPaid: String
 }

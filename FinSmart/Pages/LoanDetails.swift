@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoanDetails: View {
+    var loan: Loans
+    
     var body: some View {
 		ScrollView {
 			VStack (alignment: .leading) {
@@ -56,7 +58,7 @@ struct LoanDetails: View {
 							VStack (alignment: .leading) {
 								Text("Loaned from")
 									.font(.callout)
-								Text("KonohaDana")
+                                Text(loan.loanedFrom)
 									.font(.title3)
 							}
 							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
@@ -73,7 +75,7 @@ struct LoanDetails: View {
 						VStack (alignment: .leading) {
 							Text("Loan Amount")
 								.font(.callout)
-							Text("IDR 1.000.000")
+                            Text("Rp. \(String(loan.loanAmount.formatted()))")
 								.font(.title3)
 						}
 						.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
@@ -115,7 +117,7 @@ struct LoanDetails: View {
 								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
 						}
 						
-						Text("Birthday")
+                        Text(loan.name)
 							.font(.title3)
 						
 						Divider().padding(5)
@@ -134,7 +136,7 @@ struct LoanDetails: View {
 							VStack (alignment: .trailing) {
 								Text("For")
 									.font(.callout)
-								Text("12 Months")
+                                Text("\(String(loan.installmentPeriod)) Months")
 									.font(.title3)
 							}
 							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
@@ -190,5 +192,5 @@ struct LoanDetails: View {
 }
 
 #Preview {
-    LoanDetails()
+    LoanDetails(loan: loans[0])
 }

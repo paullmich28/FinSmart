@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Birthday",
+        "loanAmount": 1000000,
+        "loanedFrom": "Kredivi",
+        "startDate": "2024-01-01T00:00:00Z",
+        "dueDate": "2024-12-31T00:00:00Z",
+        "installmentPeriod": 12,
+        "hasPaid": 500000,
+        "lastPaid": "2024-02-01T00:00:00Z"
+    },
+    {
+        "id": 2,
+        "name": "Lunch",
+        "loanAmount": 1000000,
+        "loanedFrom": "AdaKamu",
+        "startDate": "2024-02-15T00:00:00Z",
+        "dueDate": "2024-11-15T00:00:00Z",
+        "installmentPeriod": 6,
+        "hasPaid": 500000,
+        "lastPaid": "2024-03-15T00:00:00Z"
+    },
+    {
+        "id": 3,
+        "name": "Diamond FF",
+        "loanAmount": 600000,
+        "loanedFrom": "KonohaDana",
+        "startDate": "2024-03-10T00:00:00Z",
+        "dueDate": "2024-10-10T00:00:00Z",
+        "installmentPeriod": 3,
+        "hasPaid": 200000,
+        "lastPaid": "2024-04-10T00:00:00Z"
+    }
+]

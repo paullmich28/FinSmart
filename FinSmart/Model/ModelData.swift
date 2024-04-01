@@ -8,6 +8,7 @@
 import Foundation
 
 var platforms: [Platform] = load("platformList.json")
+var loans: [Loans] = load("loanList.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

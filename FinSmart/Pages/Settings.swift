@@ -11,12 +11,14 @@ struct Settings: View {
     @State var isNotif = false
     var body: some View {
         VStack(alignment: .leading){
-            Text("Settings").font(.headline)
-            HStack{
-                Toggle(isOn: $isNotif) {
-                    Text("Notifications").font(.title3)
-                }
+            Text("Settings")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Toggle(isOn: $isNotif) {
+                Text("Notifications").font(.title3)
             }
+            
         }.padding(20)
         Spacer()
     }
