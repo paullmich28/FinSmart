@@ -8,27 +8,28 @@
 import SwiftUI
 
 struct BottomTabView: View {
-    @State private var isTabViewHidden = false
-    
     var body: some View {
-		TabView {
-			Group {
-				HomeScreen()
-					.tabItem {
-						Label("Home", systemImage: "house")
-					}
-				
-				FinanceSummary()
-					.tabItem {
-						Label("Add Loan", systemImage: "plus")
-					}
-				
-				PlatformList()
-					.tabItem {
-						Label("Platform List", systemImage: "books.vertical")
-					}
-			}
-		}
+        NavigationStack{
+            TabView {
+                Group {
+                    HomeScreen()
+                        .tabItem {
+                            Label("Home", systemImage: "house")
+                        }
+                    
+                    FinanceSummary()
+                        .tabItem {
+                            Label("Add Loan", systemImage: "plus")
+                        }
+                    
+                    PlatformList()
+                        .tabItem {
+                            Label("Platform List", systemImage: "books.vertical")
+                        }
+                }
+            }
+        }
+        
     }
 }
 

@@ -58,10 +58,6 @@ struct PlatformDetailProjection: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                 
-                NavigationLink(destination: PlatformListProjection()){
-                    Text("Start Making Loan Projection")
-                        .font(.title3)
-                }
                 .buttonStyle(PlainButtonStyle())
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 10)

@@ -78,7 +78,7 @@ struct FinanceSummary: View {
             
             Spacer()
             
-            NavigationLink(destination: PlatformListProjection()){
+            NavigationLink(destination: TitleAmount()){
                 Text("Start Making Loan Projection")
                     .font(.title3)
             }
