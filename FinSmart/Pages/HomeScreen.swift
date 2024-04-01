@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    
-    let categories = ["Ongoing", "Paid", "Completed"]
+    @State private var categoriesSelected = "Ongoing"
+    var categoriesFilter = ["Ongoing", "Paid", "Completed"]
     
     var body: some View {
         NavigationStack {
@@ -76,15 +76,12 @@ struct HomeScreen: View {
                 .foregroundStyle(Color.black)
                 
                 HStack() {
-                    ForEach(categories, id: \.self) {filter in
-                        Text(filter)
-                            .font(.callout)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 3)
-                            .background(RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.gray).opacity(0.2)
-                            )
-                    }
+					Picker("Selected Filter", selection: $categoriesSelected) {
+						ForEach(categoriesFilter, id: \.self) {
+							Text($0)
+						}
+					}
+					.pickerStyle(.segmented)
                 }
                 .padding()
                 
