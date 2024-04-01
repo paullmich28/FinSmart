@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PlatformListProjection: View {
     var body: some View {
-        NavigationView{
-            VStack{
-                ProgressView(value: 3, total: 12)
+        VStack{
+            ProgressView(value: 3, total: 12)
+            NavigationView{
                 List(platforms){platform in
                     NavigationLink(destination: PlatformDetailProjection(platform: platform)){
                         PlatformRows(platform: platform)
@@ -21,9 +21,10 @@ struct PlatformListProjection: View {
                 .background(.white)
                 .scrollContentBackground(.hidden)
                 .navigationTitle("P2P List")
-            }.padding()
+            }
             
-        }
+        }.padding()
+        
     }
 }
 
