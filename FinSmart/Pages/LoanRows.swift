@@ -44,6 +44,7 @@ struct LoanRows: View {
                 }
                 
                 ProgressView(value: 3, total: 12)
+                    .tint(Color.primaryBlue)
             }
             .padding()
             .foregroundStyle(Color.black)
