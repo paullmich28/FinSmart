@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TitleAmount: View {
+	
     @State private var loanTitle: String = ""
     @State private var loanAmount: String = ""
     
