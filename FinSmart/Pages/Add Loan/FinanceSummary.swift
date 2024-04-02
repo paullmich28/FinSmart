@@ -18,6 +18,7 @@ struct FinanceSummary: View {
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+				
 				VStack {
 					VStack {
 						Text("Income")
