@@ -11,12 +11,11 @@ struct PlatformRows: View {
     var platform: Platform
     
     var body: some View {
-        HStack{
-            Image(systemName: "heart")
+        HStack {
             Text(platform.name)
-                .font(.title2)
+				.font(.title3)
         }
-        .padding([.vertical])
+        .padding(.vertical)
     }
 }
 
