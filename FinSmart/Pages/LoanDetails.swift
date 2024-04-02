@@ -61,6 +61,7 @@ struct LoanDetails: View {
 					ProgressView(value: 3, total: 12)
 						.padding(.horizontal, 30)
 						.padding(.bottom, 15)
+                        .tint(Color.primaryBlue)
 				}
 				.padding(.bottom, 20)
 				.padding(.horizontal, 5)
@@ -184,7 +185,7 @@ struct LoanDetails: View {
 				})
 				.padding()
 				.background(RoundedRectangle(cornerRadius: 30))
-				.foregroundStyle(Color.blue)
+				.foregroundStyle(Color.primaryBlue)
 			}
 			.padding()
 			.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
