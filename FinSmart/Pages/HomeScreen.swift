@@ -17,14 +17,14 @@ struct HomeScreen: View {
                 HStack {
                     Spacer()
                     
-                    NavigationLink(destination: NotificationList()){
-                        Image(systemName: "bell")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 20)
-                            .padding(.horizontal, 10)
-                    }
-                    .buttonStyle(PlainButtonStyle())
+//                    NavigationLink(destination: NotificationList()){
+//                        Image(systemName: "bell")
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .frame(width: 20)
+//                            .padding(.horizontal, 10)
+//                    }
+//                    .buttonStyle(PlainButtonStyle())
                     
                     NavigationLink(destination: Settings()){
                         Image(systemName: "gearshape")

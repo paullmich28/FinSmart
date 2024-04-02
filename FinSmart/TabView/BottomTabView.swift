@@ -14,17 +14,17 @@ struct BottomTabView: View {
                 Group {
                     HomeScreen()
                         .tabItem {
-                            Label("Home", systemImage: "house")
+                            Label("Manage Loan", systemImage: "doc.plaintext.fill")
                         }
                     
                     FinanceSummary()
                         .tabItem {
-                            Label("Add Loan", systemImage: "plus")
+                            Label("Add Loan", systemImage: "plus.circle.fill")
                         }
                     
                     PlatformList()
                         .tabItem {
-                            Label("Platform List", systemImage: "books.vertical")
+                            Label("Platform List", systemImage: "books.vertical.fill")
                         }
                 }
             }
