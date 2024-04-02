@@ -9,89 +9,15 @@ import SwiftUI
 
 struct FinanceSummary: View {
     var body: some View {
-<<<<<<< HEAD
-        NavigationStack{
-            ProgressView(value: 1, total: 5).padding()
-            VStack{
-=======
+
         NavigationStack {
             VStack {
 				ProgressView(value: 1, total: 6)
 					.padding(.bottom, 16)
->>>>>>> main
                 Text("Finance Summary")
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-<<<<<<< HEAD
-                
-                
-                VStack{
-                    VStack{
-                        Text("Your Income:")
-                            .font(.title2)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                        Text("Rp. 5.000.000")
-                            .font(.title3)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    }
-                    
-                    VStack{
-                        Text("Your Expenses:")
-                            .font(.title2)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                        Text("Rp. 2.000.000")
-                            .font(.title3)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    }
-                    .padding(.top, 5)
-                }
-                .padding()
-                .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(.green)
-                    .compositingGroup()
-                    .shadow(radius: 3)
-                )
-                
-                VStack{
-                    VStack{
-                        Text("Your Ongoing loans:")
-                            .font(.title2)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                        
-                        HStack{
-                            Text("Birthday")
-                                .font(.title2)
-                            Text("Rp. 1.000.000")
-                                .font(.title3)
-                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-                        }
-                        
-                        HStack{
-                            Text("Lunch")
-                                .font(.title2)
-                            Text("Rp. 1.000.000")
-                                .font(.title3)
-                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-                        }
-                    }
-                }
-                .padding()
-                .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(.orange)
-                    .compositingGroup()
-                    .shadow(radius: 3)
-                )
-            }
-            .padding()
-            
-            Spacer()
-            
-            NavigationLink(destination: TitleAmount()){
-                Text("Continue")
-                    .font(.title3)
-=======
-				
 				VStack {
 					VStack {
 						Text("Income")
@@ -200,7 +126,6 @@ struct FinanceSummary: View {
 					.fill(Color.primaryBlue)
 					.shadow(radius: 3)
 				)
->>>>>>> main
             }
             .padding()
 			.toolbar {
