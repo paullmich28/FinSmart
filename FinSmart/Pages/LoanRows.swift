@@ -14,11 +14,17 @@ struct LoanRows: View {
         NavigationLink(destination:LoanDetails(loan: loan)){
             VStack {
                 HStack {
-                    
                     VStack (alignment: .leading) {
-                        Text(loan.name)
-                            .font(.title2)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        HStack{
+                            
+                            Text(loan.name)
+                                .font(.title2)
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            
+                            Text("Due : 10 days")
+                                .font(.title3)
+                        }
+                        
                         Text(loan.loanedFrom)
                             .font(.callout)
                             .fontWeight(.semibold)
@@ -29,14 +35,6 @@ struct LoanRows: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                     }
-                    
-                    VStack {
-                        Text("Due in")
-                            .font(.title3)
-                        Text("2 Days")
-                            .font(.title2)
-                    }
-                    .frame(width: 100.0)
                 }
                 
                 ProgressView(value: 3, total: 12)
