@@ -15,9 +15,7 @@ struct HomeScreen: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Text("FinSmart")
-                        .font(.largeTitle)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    Spacer()
                     
                     NavigationLink(destination: NotificationList()){
                         Image(systemName: "bell")
@@ -40,35 +38,46 @@ struct HomeScreen: View {
                 .padding(.bottom, 15)
                 
                 NavigationLink(destination: ProfileScreen()) {
-                    VStack (alignment: .leading) {
-                        HStack {
-                            Text("Hello!")
+                    VStack (alignment: .center) {
+                        // Clutter pak
+                        HStack{
+                            Text("This Month Financial Summary")
                                 .font(.title)
-                            Image(systemName: "arrow.right")
-                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-                        }
-                        .padding(.bottom, 15)
-                        HStack {
-                            Text("Your Income")
-                                .font(.title3)
-                            Text("IDR 5.000.000")
-                                .font(.headline)
-                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            
+                            VStack(alignment: .trailing){
+                                Image(systemName: "arrow.right")
+                            }
+                            
                         }
                         
-                        Divider().padding(5)
+                        Divider().frame(width: 320, height: 2).overlay(.black)
                         
                         HStack {
-                            Text("Your Expenses")
-                                .font(.title3)
-                            Text("IDR 2.000.000")
-                                .font(.headline)
-                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                            VStack(alignment: .center){
+                                Text("Your Income")
+                                    .font(.subheadline)
+                                Text("IDR 5.000.000")
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            
+                            Divider().frame(width: 2, height: 50).overlay(.black)
+                            
+                            VStack(alignment: .center){
+                                Text("Your Expenses")
+                                    .font(.subheadline)
+                                Text("IDR 2.000.000")
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                            }.frame(maxWidth: .infinity, alignment: .center)
+                            
                         }
                     }
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white)
+                        .fill(Color.yellow70)
                         .compositingGroup()
                         .shadow(radius: 3)
                     )
@@ -76,19 +85,18 @@ struct HomeScreen: View {
                 .foregroundStyle(Color.black)
                 
                 HStack() {
-					Picker("Selected Filter", selection: $categoriesSelected) {
-						ForEach(categoriesFilter, id: \.self) {
-							Text($0)
-						}
-					}
-					.pickerStyle(.segmented)
+                    Picker("Selected Filter", selection: $categoriesSelected) {
+                        ForEach(categoriesFilter, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                    .pickerStyle(.segmented)
                 }
                 .padding()
                 
                 ScrollView{
                     ForEach(loans){loan in
                         LoanRows(loan: loan)
-                        
                     }
                 }
                 .shadow(radius: 3)

@@ -59,33 +59,38 @@ struct ProfileScreen: View {
 					VStack (alignment: .leading) {
 						HStack {
 							Text("Your Income")
-								.font(.title2)
+								.font(.subheadline)
 							Image(systemName: "square.and.pencil")
 								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
 						}
 						.padding(.bottom, 1)
 						
 						Text("IDR 5.000.000")
-							.font(.headline)
+							.font(.title2)
+                            .fontWeight(.semibold)
 						
 						Divider().padding(5)
 						
 						HStack {
 							Text("Your Expenses")
-								.font(.title2)
+								.font(.subheadline)
 							Image(systemName: "square.and.pencil")
 								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
 						}
 						.padding(.bottom, 1)
 						
 						Text("IDR 2.000.000")
-							.font(.headline)
+							.font(.title2)
+                            .fontWeight(.semibold)
+        
 					}
+                    
 				}
 				.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				.compositingGroup()
 				.shadow(radius: 3)
 				.padding(.bottom, 30)
+                .backgroundStyle(Color.blue10)
 				
 				Text("Your Loans")
 					.font(.title2)
@@ -104,9 +109,10 @@ struct ProfileScreen: View {
 							
 							VStack (alignment: .leading) {
 								Text("KonohaDana")
-									.font(.title2)
+                                    .font(.subheadline)
 								Text("IDR 1.000.000")
-									.font(.headline)
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
 							}
 							
 							Text("Due in 2 days")
@@ -125,9 +131,10 @@ struct ProfileScreen: View {
 							
 							VStack (alignment: .leading) {
 								Text("AdaKamu")
-									.font(.title2)
+									.font(.subheadline)
 								Text("IDR 1.000.000")
-									.font(.headline)
+									.font(.title3)
+                                    .fontWeight(.semibold)
 							}
 							
 							Text("Due in 10 days")
@@ -139,6 +146,7 @@ struct ProfileScreen: View {
 				.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				.compositingGroup()
 				.shadow(radius: 3)
+                .backgroundStyle(Color.blue10)
 			}
 			.padding()
 		}

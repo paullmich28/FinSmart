@@ -20,27 +20,30 @@ struct LoanRows: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 40)
                     }
-                    .padding(.trailing, 30)
+                    .padding(.trailing, 10)
                     
                     VStack (alignment: .leading) {
                         Text(loan.name)
-                            .font(.title3)
+                            .font(.title2)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         Text(loan.loanedFrom)
                             .font(.callout)
-                        Divider().padding(.vertical, 5)
+                            .fontWeight(.semibold)
+                        Divider().frame(height: 2).overlay(.black)
                         Text("Loan Amount")
                             .font(.subheadline)
                         Text("Rp. \(String(loan.loanAmount.formatted()))")
-                            .font(.headline)
+                            .font(.title3)
+                            .fontWeight(.semibold)
                     }
                     
                     VStack {
                         Text("Due in")
                             .font(.title3)
                         Text("2 Days")
-                            .font(.title)
+                            .font(.title2)
                     }
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                    .frame(width: 100.0)
                 }
                 
                 ProgressView(value: 3, total: 12)
@@ -49,7 +52,7 @@ struct LoanRows: View {
             .padding()
             .foregroundStyle(Color.black)
             .background(RoundedRectangle(cornerRadius: 10)
-                .fill(Color.white)
+                .fill(Color.blue10)
             )
         }
         

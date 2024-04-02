@@ -1,32 +1,37 @@
 [
     {
         "id": 1,
-        "name": "Kredivi",
+        "name": "Kredivo",
         "interestRate": 0.2,
         "adminFee": 1.0,
         "limit": 50000000,
-        "latenessFee": 5.0
+        "latenessFee": 5.0,
+        "imageName": "Kredivo",
+        "interestRateDuration": "day",
     },
     {
         "id": 2,
-        "name": "AdaKamu",
-        "interestRate": 0.3,
-        "adminFee": 4.0,
-        "limit": 80000000,
-        "latenessFee": 5.0
+        "name": "Shopee Pay Later",
+        "interestRate": 2.95,
+        "adminFee": 1.0,
+        "limit": 0,
+        "latenessFee": 5.0,
+        "imageName": "SPayLater",
+        "interestRateDuration": "month"
     },
     {
         "id": 3,
-        "name": "KonohaDana",
-        "interestRate": 0.4,
+        "name": "Gopay Later",
+        "interestRate": 2.0,
         "adminFee": 2.0,
-        "limit": 60000000,
-        "latenessFee": 5.0
+        "limit": 30000000,
+        "latenessFee": 5.0,
+        "interestRateDuration": "month"
     },
     {
         "id": 4,
-        "name": "HardCash",
-        "interestRate": 0.4,
+        "name": "BCA Pay Later",
+        "interestRate": 2.0,
         "adminFee": 1.0,
         "limit": 100000000,
         "latenessFee": 5.0
