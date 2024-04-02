@@ -110,6 +110,7 @@ struct LoanDetails: View {
             .shadow(radius: 3)
             .padding(.bottom, 10)
             .padding(.horizontal, 5)
+            .backgroundStyle(Color.yellow70)
             
             GroupBox{
                 HStack {
@@ -137,6 +138,7 @@ struct LoanDetails: View {
             .shadow(radius: 3)
             .padding(.bottom, 10)
             .padding(.horizontal, 5)
+            .backgroundStyle(Color.yellow70)
             
             Button(action: {
                 
