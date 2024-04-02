@@ -13,9 +13,9 @@ struct TitleAmount: View {
     
     var body: some View {
         VStack{
-            ProgressView(value: 3, total: 12)
+            ProgressView(value: 2, total: 5)
             
-            Text("Please fill the forms")
+            Text("Loan Overview")
                 .padding([.vertical])
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .fontWeight(.bold)
@@ -29,6 +29,11 @@ struct TitleAmount: View {
                         text: $loanTitle
                     )
                     .disableAutocorrection(true)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(.blue)
+                    )
+                
                 }.padding([.bottom])
                 
                 VStack(alignment: .leading){
@@ -38,6 +43,10 @@ struct TitleAmount: View {
                         text: $loanAmount
                     )
                     .disableAutocorrection(true)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(.blue)
+                    )
                 }
                 
             }
@@ -46,7 +55,7 @@ struct TitleAmount: View {
             Spacer()
             
             NavigationLink(destination: PlatformListProjection()){
-                Text("Start Making Loan Projection")
+                Text("Continue")
                     .font(.title3)
             }
             .buttonStyle(PlainButtonStyle())

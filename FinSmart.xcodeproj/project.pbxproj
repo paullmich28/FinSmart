@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D42AD212BBC464E00462888 /* StartDateDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42AD202BBC464E00462888 /* StartDateDuration.swift */; };
 		AC08CC972BB84B0100EE7800 /* PlatformListProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */; };
 		AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */; };
 		AC143C072BB6C98B00EEC76C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C062BB6C98B00EEC76C /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D42AD202BBC464E00462888 /* StartDateDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDateDuration.swift; sourceTree = "<group>"; };
 		AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformListProjection.swift; sourceTree = "<group>"; };
 		AC143C012BB6C98B00EEC76C /* FinSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartApp.swift; sourceTree = "<group>"; };
@@ -70,6 +72,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D42AD232BBC4E6D00462888 /* Loan Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Loan Confirmation";
+			sourceTree = "<group>";
+		};
 		AC143BF82BB6C98B00EEC76C = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +121,12 @@
 		ACBAC8A02BB7CC170013CFB4 /* Add Loan */ = {
 			isa = PBXGroup;
 			children = (
+				0D42AD232BBC4E6D00462888 /* Loan Confirmation */,
 				ACBAC8A12BB7D0070013CFB4 /* FinanceSummary.swift */,
 				AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */,
 				ACF2EAB42BBA94DE00869E0D /* PlatformDetailProjection.swift */,
 				ACF2EAB62BBA991900869E0D /* TitleAmount.swift */,
+				0D42AD202BBC464E00462888 /* StartDateDuration.swift */,
 			);
 			path = "Add Loan";
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 				ACF2EAB72BBA991900869E0D /* TitleAmount.swift in Sources */,
 				AC9083542BB961A10001607F /* PlatformRows.swift in Sources */,
 				AC08CC972BB84B0100EE7800 /* PlatformListProjection.swift in Sources */,
+				0D42AD212BBC464E00462888 /* StartDateDuration.swift in Sources */,
 				E4366A5F2BB6DE2C00FBC5D1 /* LoanDetails.swift in Sources */,
 				AC9083562BB9679F0001607F /* PlatformDetail.swift in Sources */,
 				E4366A652BB6F05800FBC5D1 /* BottomTabView.swift in Sources */,

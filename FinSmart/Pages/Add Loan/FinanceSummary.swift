@@ -10,6 +10,7 @@ import SwiftUI
 struct FinanceSummary: View {
     var body: some View {
         NavigationStack{
+            ProgressView(value: 1, total: 5).padding()
             VStack{
                 Text("Finance Summary")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -79,7 +80,7 @@ struct FinanceSummary: View {
             Spacer()
             
             NavigationLink(destination: TitleAmount()){
-                Text("Start Making Loan Projection")
+                Text("Continue")
                     .font(.title3)
             }
             .buttonStyle(PlainButtonStyle())

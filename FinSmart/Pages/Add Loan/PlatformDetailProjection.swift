@@ -11,6 +11,7 @@ struct PlatformDetailProjection: View {
     var platform: Platform
     
     var body: some View {
+        ProgressView(value: 3, total: 5).padding()
         VStack{
             RoundedRectangle(cornerRadius: 5.0)
                 .fill(.blue)
@@ -58,8 +59,8 @@ struct PlatformDetailProjection: View {
                     .fontWeight(.semibold)
                 
                 
-				NavigationLink(destination: BottomTabView().navigationBarBackButtonHidden(true)){
-                    Text("Start making your projection")
+				NavigationLink(destination: StartDateDuration().navigationBarBackButtonHidden(true)){
+                    Text("Continue")
                         .font(.title3)
                         .fontWeight(.semibold)
                 }

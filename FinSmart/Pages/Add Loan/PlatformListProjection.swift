@@ -10,7 +10,7 @@ import SwiftUI
 struct PlatformListProjection: View {
     var body: some View {
         VStack{
-            ProgressView(value: 3, total: 12)
+            ProgressView(value: 3, total: 5).padding()
             NavigationView{
                 List(platforms){platform in
                     NavigationLink(destination: PlatformDetailProjection(platform: platform)){

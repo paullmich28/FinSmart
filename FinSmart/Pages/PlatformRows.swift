@@ -12,6 +12,7 @@ struct PlatformRows: View {
     
     var body: some View {
         HStack{
+            Image(systemName: "heart")
             Text(platform.name)
                 .font(.title2)
         }
