@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D42AD212BBC464E00462888 /* StartDateDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42AD202BBC464E00462888 /* StartDateDuration.swift */; };
+		0D42AD252BBC574700462888 /* LoanProjectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42AD242BBC574700462888 /* LoanProjectionModel.swift */; };
 		AC08CC972BB84B0100EE7800 /* PlatformListProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */; };
 		AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */; };
 		AC143C072BB6C98B00EEC76C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143C062BB6C98B00EEC76C /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0D42AD202BBC464E00462888 /* StartDateDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDateDuration.swift; sourceTree = "<group>"; };
+		0D42AD242BBC574700462888 /* LoanProjectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanProjectionModel.swift; sourceTree = "<group>"; };
 		AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformListProjection.swift; sourceTree = "<group>"; };
 		AC143C012BB6C98B00EEC76C /* FinSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartApp.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				ACBAC8A52BB7D1E80013CFB4 /* Loans.swift */,
 				ACBAC8A72BB7D2740013CFB4 /* Platform.swift */,
 				AC9083512BB9613C0001607F /* ModelData.swift */,
+				0D42AD242BBC574700462888 /* LoanProjectionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				E4366A682BB6F10000FBC5D1 /* PlatformList.swift in Sources */,
 				AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */,
 				AC9083522BB9613C0001607F /* ModelData.swift in Sources */,
+				0D42AD252BBC574700462888 /* LoanProjectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
