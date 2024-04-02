@@ -38,7 +38,7 @@ struct HomeScreen: View {
                 .padding(.bottom, 15)
                 
                 NavigationLink(destination: ProfileScreen()) {
-                    VStack (alignment: .center) {
+                    VStack (alignment: .leading) {
                         // Clutter pak
                         HStack{
                             Text("This Month Financial Summary")
@@ -51,7 +51,7 @@ struct HomeScreen: View {
                             
                         }
                         
-                        Divider().frame(width: 320, height: 2).overlay(.black)
+                        Divider().frame(width: 320, height: 0.5).overlay(.black)
                         
                         HStack {
                             VStack(alignment: .center){
@@ -63,7 +63,7 @@ struct HomeScreen: View {
                             }
                             .frame(maxWidth: .infinity, alignment: .center)
                             
-                            Divider().frame(width: 2, height: 50).overlay(.black)
+                            Divider().frame(width: 0.5, height: 50).overlay(.black)
                             
                             VStack(alignment: .center){
                                 Text("Your Expenses")

@@ -9,7 +9,16 @@ import SwiftUI
 
 struct OnboardingPage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TabView{
+                Text("1")
+                Text("Hello, World!")
+                Text("2")
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+        }
+        .background(.yellow50)
     }
 }
 

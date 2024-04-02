@@ -14,13 +14,6 @@ struct LoanRows: View {
         NavigationLink(destination:LoanDetails(loan: loan)){
             VStack {
                 HStack {
-                    VStack {
-                        Image(systemName: "text.book.closed")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 40)
-                    }
-                    .padding(.trailing, 10)
                     
                     VStack (alignment: .leading) {
                         Text(loan.name)
@@ -29,7 +22,7 @@ struct LoanRows: View {
                         Text(loan.loanedFrom)
                             .font(.callout)
                             .fontWeight(.semibold)
-                        Divider().frame(height: 2).overlay(.black)
+                        Divider().frame(height: 0.5).overlay(.black)
                         Text("Loan Amount")
                             .font(.subheadline)
                         Text("Rp. \(String(loan.loanAmount.formatted()))")

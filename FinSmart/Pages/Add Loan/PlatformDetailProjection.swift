@@ -59,7 +59,7 @@ struct PlatformDetailProjection: View {
                     .fontWeight(.semibold)
                 
                 
-				NavigationLink(destination: StartDateDuration().navigationBarBackButtonHidden(true)){
+				NavigationLink(destination: StartDateDuration()){
                     Text("Continue")
                         .font(.title3)
                         .fontWeight(.semibold)
