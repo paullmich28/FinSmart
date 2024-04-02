@@ -22,7 +22,7 @@ struct PlatformDetailProjection: View {
 					.padding()
 				
 				Text(platform.name)
-					.font(.title)
+					.font(.largeTitle)
 					.fontWeight(.bold)
 				
 				Text("OJK: S-000 / NB.000 / 0000")
@@ -34,31 +34,35 @@ struct PlatformDetailProjection: View {
 					VStack {
 						HStack {
 							VStack {
-								Text("Interest Rate")
-									.font(.callout)
-									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-								Text("\(String(platform.interestRate))% / DAY")
-									.font(.title2)
-									.fontWeight(.semibold)
-									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-							}
-							
-							VStack {
-								Text("Limit")
+								Text("Maximum Limit")
 									.font(.callout)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 								Text("Rp. \(String(platform.limit.formatted()))")
-									.font(.title2)
+									.font(.title)
 									.fontWeight(.semibold)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 							}
 						}
 					}
 					
-					Divider()
+					Divider().padding(.vertical, 10)
 					
 					VStack {
 						HStack {
+							VStack {
+								Text("Interest")
+									.font(.callout)
+									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
+								HStack {
+									Text("\(String(platform.interestRate))%")
+										.font(.title2)
+										.fontWeight(.semibold)
+										.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
+									Text("/ day")
+										.font(.caption)
+								}
+							}
+							
 							VStack {
 								Text("Admin Fee")
 									.font(.callout)
@@ -70,13 +74,19 @@ struct PlatformDetailProjection: View {
 							}
 							
 							VStack {
-								Text("Lateness Fee")
+								Text("Late Fee")
 									.font(.callout)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-								Text("\(String(platform.latenessFee))% / MONTH")
-									.font(.title2)
-									.fontWeight(.semibold)
-									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
+								
+								
+								HStack {
+									Text("\(String(platform.latenessFee))%")
+										.font(.title2)
+										.fontWeight(.semibold)
+										.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
+									Text("/ month")
+										.font(.caption)
+								}
 							}
 						}
 					}

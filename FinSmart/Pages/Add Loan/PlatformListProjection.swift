@@ -35,7 +35,7 @@ struct PlatformListProjection: View {
 							Divider().padding(.vertical, 6)
 						}
 					}
-					.backgroundStyle(Color.blue10)
+					.backgroundStyle(Color.white)
 				}
 			}.padding()
 		}
