@@ -13,11 +13,38 @@ struct LoanDetails: View {
     var body: some View {
 		ScrollView {
 			VStack (alignment: .leading) {
-				Text("Loan Details")
-					.font(.title2)
-				Text("This is your loan details")
-					.font(.footnote)
-					.padding(.bottom, 20)
+				HStack (alignment: .center) {
+					Image(systemName: "text.book.closed")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.frame(width: 50)
+						.frame(maxHeight: .infinity, alignment: .topLeading)
+						.padding(.trailing, 10)
+					
+					VStack (alignment: .leading) {
+						Text(loan.name)
+							.font(.title)
+						Text(loan.loanedFrom)
+							.font(.title2)
+							.padding(.bottom, 20)
+					}
+					
+					Spacer()
+					
+					Button(action: {
+						
+						// Taruh button action di sini when button is pressed
+						
+					}, label: {
+						Image(systemName: "trash")
+							.resizable()
+							.aspectRatio(contentMode: .fit)
+							.frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topTrailing)
+							.frame(width: 30)
+							.padding(10)
+							.foregroundColor(.red)
+					})
+				}
 				
 				VStack {
 					Text("_:(´ཀ`」 ∠):")
@@ -36,42 +63,11 @@ struct LoanDetails: View {
 						.padding(.bottom, 15)
 				}
 				.padding(.bottom, 20)
-				.overlay(alignment: .topTrailing) {
-					Button(action: {
-						
-						// Taruh button action di sini when button is pressed
-						
-					}, label: {
-						Image(systemName: "trash")
-							.resizable()
-							.aspectRatio(contentMode: .fit)
-							.frame(maxWidth: .infinity, alignment: .top)
-							.frame(width: 25)
-							.padding(10)
-							.foregroundColor(.red)
-					})
-				}
+				.padding(.horizontal, 5)
+			}
 				
 				GroupBox {
 					VStack (alignment: .leading) {
-						HStack {
-							VStack (alignment: .leading) {
-								Text("Loaned from")
-									.font(.callout)
-                                Text(loan.loanedFrom)
-									.font(.title3)
-							}
-							.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-							
-							Image(systemName: "text.book.closed")
-								.resizable()
-								.aspectRatio(contentMode: .fit)
-								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-								.frame(width: 30)
-						}
-						
-						Divider().padding(5)
-						
 						VStack (alignment: .leading) {
 							Text("Loan Amount")
 								.font(.callout)
@@ -107,9 +103,11 @@ struct LoanDetails: View {
 				.compositingGroup()
 				.shadow(radius: 3)
 				.padding(.bottom, 10)
+				.padding(.horizontal, 5)
 				
 				GroupBox {
 					VStack (alignment: .leading) {
+						/*
 						HStack {
 							Text("Used for")
 								.font(.callout)
@@ -117,10 +115,12 @@ struct LoanDetails: View {
 								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
 						}
 						
-                        Text(loan.name)
+						 Text(loan.name)
 							.font(.title3)
 						
 						Divider().padding(5)
+						 
+						 */
 						
 						HStack {
 							VStack (alignment: .leading) {
@@ -169,6 +169,7 @@ struct LoanDetails: View {
 				.compositingGroup()
 				.shadow(radius: 3)
 				.padding(.bottom, 10)
+				.padding(.horizontal, 5)
 				
 				Button(action: {
 					
@@ -189,7 +190,7 @@ struct LoanDetails: View {
 			.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 		}
     }
-}
+
 
 #Preview {
     LoanDetails(loan: loans[0])
