@@ -22,17 +22,20 @@ struct StartDateDuration: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(.bold)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+				
+					.padding(.bottom, 18)
                 
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading){
                         DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/,  displayedComponents:  [.date], label: { Text("Start Date") })
                             .datePickerStyle(.compact)
-                    }.padding(5)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.blue)
-                        )
-                        .padding([.bottom])
+                    }
+					.padding()
+					.overlay(
+						RoundedRectangle(cornerRadius: 10)
+							.stroke(Color.primaryBlue)
+					)
+					.padding([.bottom])
                     
                     HStack(){
                         Text("Loan Duration")
@@ -45,10 +48,10 @@ struct StartDateDuration: View {
                             Text("12 Months").tag(12)
     //                        Text("Choose...").tag(99)
                         }
-                    }.padding(5)
+                    }.padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(.blue)
+							.stroke(Color.primaryBlue)
                     )
     //                VStack(alignment: .leading){
     //                    Text("Custom Loan Duration")
@@ -60,17 +63,18 @@ struct StartDateDuration: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: PlatformListProjection()){
-                    Text("Continue")
-                        .font(.title3)
-                }
-                .buttonStyle(PlainButtonStyle())
-                .padding()
-                .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(.bar)
-                    .shadow(radius: 3)
-                )
-                .offset(y: -50.0)
+				NavigationLink(destination: StartDateDuration()) {
+					Text("Continue")
+						.font(.headline)
+						.foregroundStyle(Color.white)
+				}
+				.buttonStyle(PlainButtonStyle())
+				.padding()
+				.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+				.background(RoundedRectangle(cornerRadius: 30)
+					.fill(Color.primaryBlue)
+					.shadow(radius: 3)
+				)
             }
             .padding()
         }

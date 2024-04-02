@@ -12,6 +12,8 @@ struct PlatformRows: View {
     
     var body: some View {
         HStack {
+			Image(systemName: "text.book.closed")
+				.padding(.trailing, 6)
             Text(platform.name)
 				.font(.title3)
         }

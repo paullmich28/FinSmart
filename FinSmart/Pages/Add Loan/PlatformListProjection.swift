@@ -9,25 +9,36 @@ import SwiftUI
 
 struct PlatformListProjection: View {
 	var body: some View {
-		VStack {
-			ProgressView(value: 3, total: 5)
-				.padding(.bottom, 16)
-			Text("Platform List")
-				.font(.title)
-				.fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-				.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+		NavigationStack {
+			VStack {
+				ProgressView(value: 3, total: 5)
+					.padding(.bottom, 16)
+				Text("Platform List")
+					.font(.title)
+					.fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				
-			List(platforms) { platform in
-				NavigationLink(destination: PlatformDetailProjection(platform: platform)) {
-					PlatformRows(platform: platform)
+					.padding(.bottom, 18)
+				
+				ScrollView {
+					GroupBox {
+						ForEach(platforms) { platform in
+							NavigationLink(destination: PlatformDetailProjection(platform: platform)){
+								PlatformRows(platform: platform)
+									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+									.foregroundStyle(Color.black)
+								
+								Image(systemName: "chevron.right")
+									.foregroundColor(Color.black)
+							}
+							
+							Divider().padding(.vertical, 6)
+						}
+					}
+					.backgroundStyle(Color.blue10)
 				}
-				.listRowBackground(Color.blue10)
-			}
-			.background(Color.white)
-			.listStyle(GroupedListStyle())
-			.scrollContentBackground(.hidden)
+			}.padding()
 		}
-		.padding()
 	}
 }
 

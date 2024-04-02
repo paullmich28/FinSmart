@@ -152,9 +152,9 @@
 			children = (
 				0D42AD232BBC4E6D00462888 /* Loan Confirmation */,
 				ACBAC8A12BB7D0070013CFB4 /* FinanceSummary.swift */,
+				ACF2EAB62BBA991900869E0D /* TitleAmount.swift */,
 				AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */,
 				ACF2EAB42BBA94DE00869E0D /* PlatformDetailProjection.swift */,
-				ACF2EAB62BBA991900869E0D /* TitleAmount.swift */,
 				0D42AD202BBC464E00462888 /* StartDateDuration.swift */,
 			);
 			path = "Add Loan";
