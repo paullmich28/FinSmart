@@ -14,9 +14,8 @@ struct PlatformRows: View {
         HStack{
             Text(platform.name)
                 .font(.title2)
-            Spacer()
         }
-        .padding()
+        .padding([.vertical])
     }
 }
 

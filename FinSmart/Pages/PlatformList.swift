@@ -14,7 +14,7 @@ struct PlatformList: View {
                 NavigationLink(destination: PlatformDetail(platform: platform)){
                     PlatformRows(platform: platform)
                 }
-                .listRowBackground(Color.clear)
+                .listRowBackground(Color.gray.opacity(0.2))
             }
             .background(.white)
             .scrollContentBackground(.hidden)
