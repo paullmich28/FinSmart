@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FinanceSummary: View {
     var body: some View {
-        
         NavigationStack {
             VStack {
 				ProgressView(value: 1, total: 5)
@@ -114,6 +113,8 @@ struct FinanceSummary: View {
                 )
                 
                 .padding(.bottom, 16)
+				
+				Spacer()
                 
                 NavigationLink(destination: TitleAmount()) {
                     Text("Start Loan Projection")
@@ -129,15 +130,7 @@ struct FinanceSummary: View {
                 )
             }
             .padding()
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "x.circle")
-                        .foregroundStyle(Color.primaryBlue)
-                }
-                
-            }
         }
-        .offset(y:-50)
     }
 }
 

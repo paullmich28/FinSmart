@@ -14,36 +14,27 @@ struct LoanRows: View {
         NavigationLink(destination:LoanDetails(loan: loan)){
             VStack {
                 HStack {
-                    VStack {
-                        Image(systemName: "text.book.closed")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 40)
-                    }
-                    .padding(.trailing, 10)
-                    
                     VStack (alignment: .leading) {
-                        Text(loan.name)
-                            .font(.title2)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        HStack{
+                            
+                            Text(loan.name)
+                                .font(.title2)
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            
+                            Text("Due : 10 days")
+                                .font(.title3)
+                        }
+                        
                         Text(loan.loanedFrom)
                             .font(.callout)
                             .fontWeight(.semibold)
-                        Divider().frame(height: 2).overlay(.black)
+                        Divider().frame(height: 0.5).overlay(.black)
                         Text("Loan Amount")
                             .font(.subheadline)
                         Text("Rp. \(String(loan.loanAmount.formatted()))")
                             .font(.title3)
                             .fontWeight(.semibold)
                     }
-                    
-                    VStack {
-                        Text("Due in")
-                            .font(.title3)
-                        Text("2 Days")
-                            .font(.title2)
-                    }
-                    .frame(width: 100.0)
                 }
                 
                 ProgressView(value: 3, total: 12)
