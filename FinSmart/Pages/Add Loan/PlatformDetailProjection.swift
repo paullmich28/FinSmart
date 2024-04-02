@@ -58,7 +58,7 @@ struct PlatformDetailProjection: View {
                     .fontWeight(.semibold)
                 
                 
-                NavigationLink(destination: BottomTabView()){
+				NavigationLink(destination: BottomTabView().navigationBarBackButtonHidden(true)){
                     Text("Start making your projection")
                         .font(.title3)
                         .fontWeight(.semibold)
