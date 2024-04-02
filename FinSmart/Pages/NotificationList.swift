@@ -9,7 +9,14 @@ import SwiftUI
 
 struct NotificationList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack (alignment: .leading, spacing: 5) {
+                
+            }
+            .background(.white)
+            .scrollContentBackground(.hidden)
+            .navigationTitle("Notification")
+        }
     }
 }
 
