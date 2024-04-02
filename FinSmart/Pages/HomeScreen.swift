@@ -42,6 +42,7 @@ struct HomeScreen: View {
                         // Clutter pak
                         HStack{
                             Text("This Month Financial Summary")
+                                .fontWeight(.bold)
                                 .font(.title)
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                             

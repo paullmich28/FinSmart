@@ -27,6 +27,9 @@ let chartColors: [Color] = [
 ]
 
 struct ProfileScreen: View {
+    @State private var isAlert = false
+    @State private var income = "0"
+    @State private var expense = "0"
 	var body: some View {
 		ScrollView {
 			VStack (alignment: .leading) {
@@ -57,31 +60,59 @@ struct ProfileScreen: View {
 				
 				GroupBox {
 					VStack (alignment: .leading) {
-						HStack {
-							Text("Your Income")
-								.font(.subheadline)
-							Image(systemName: "square.and.pencil")
-								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-						}
-						.padding(.bottom, 1)
-						
-						Text("IDR 5.000.000")
-							.font(.title2)
-                            .fontWeight(.semibold)
+                        Button{
+                            isAlert = true
+                        }label: {
+                            VStack (alignment: .leading){
+                                HStack {
+                                    Text("Your Income")
+                                        .font(.subheadline)
+                                    Image(systemName: "square.and.pencil")
+                                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                                }
+                                
+                                .padding(.bottom, 1)
+                                
+                                
+                                Text("IDR 5.000.000")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                            }.foregroundStyle(.black)
+                        }
+                        .alert("Edit Income", isPresented: $isAlert, actions: {
+                            TextField("New Income", text: $income)
+                            Button("OK"){ print("/(income)/")}
+                            Button("Cancel", role: .cancel){}
+                        }, message: {
+                            Text("Your income will be used to assess loan risks")
+                        })
 						
 						Divider().padding(5)
 						
-						HStack {
-							Text("Your Expenses")
-								.font(.subheadline)
-							Image(systemName: "square.and.pencil")
-								.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-						}
-						.padding(.bottom, 1)
-						
-						Text("IDR 2.000.000")
-							.font(.title2)
-                            .fontWeight(.semibold)
+                        Button{
+                            isAlert = true
+                        }label: {
+                            VStack (alignment: .leading){
+                                HStack {
+                                    Text("Your Expenses")
+                                        .font(.subheadline)
+                                    Image(systemName: "square.and.pencil")
+                                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                                }
+                                .padding(.bottom, 1)
+                                
+                                Text("IDR 2.000.000")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                            }.foregroundStyle(.black)
+                        }
+                        .alert("Edit Expense", isPresented: $isAlert, actions: {
+                            TextField("New Expense", text: $income)
+                            Button("OK"){ print("/(expense)/")}
+                            Button("Cancel", role: .cancel){}
+                        }, message: {
+                            Text("Your expense will be used to assess loan risks")
+                        })
         
 					}
                     

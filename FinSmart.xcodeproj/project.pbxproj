@@ -81,6 +81,13 @@
 			path = "Loan Confirmation";
 			sourceTree = "<group>";
 		};
+		0D42AD262BBC74E400462888 /* Income and Expense */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Income and Expense";
+			sourceTree = "<group>";
+		};
 		AC143BF82BB6C98B00EEC76C = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +107,7 @@
 		AC143C032BB6C98B00EEC76C /* FinSmart */ = {
 			isa = PBXGroup;
 			children = (
+				0D42AD262BBC74E400462888 /* Income and Expense */,
 				ACBAC8A42BB7D1D40013CFB4 /* Model */,
 				ACBAC8A32BB7D1B10013CFB4 /* Resources */,
 				AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */,
