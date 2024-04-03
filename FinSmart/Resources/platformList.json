@@ -7,7 +7,7 @@
         "limit": 50000000,
         "latenessFee": 5.0,
         "imageName": "Kredivo",
-        "interestRateDuration": "day",
+        "interestRateDuration": "day"
     },
     {
         "id": 2,
