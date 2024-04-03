@@ -38,7 +38,42 @@
 		E4366A652BB6F05800FBC5D1 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */; };
 		E4366A682BB6F10000FBC5D1 /* PlatformList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A672BB6F10000FBC5D1 /* PlatformList.swift */; };
 		E4B456ED2BBCFCCC00DCF0DF /* ProjectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B456EC2BBCFCCB00DCF0DF /* ProjectionResult.swift */; };
+		E4DFCA3C2BBD989A000C5A23 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DFCA3B2BBD989A000C5A23 /* WidgetKit.framework */; };
+		E4DFCA3E2BBD989B000C5A23 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DFCA3D2BBD989A000C5A23 /* SwiftUI.framework */; };
+		E4DFCA412BBD989B000C5A23 /* FinSmartWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA402BBD989B000C5A23 /* FinSmartWidgetBundle.swift */; };
+		E4DFCA432BBD989B000C5A23 /* FinSmartWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA422BBD989B000C5A23 /* FinSmartWidget.swift */; };
+		E4DFCA452BBD989B000C5A23 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA442BBD989B000C5A23 /* AppIntent.swift */; };
+		E4DFCA472BBD989C000C5A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DFCA462BBD989C000C5A23 /* Assets.xcassets */; };
+		E4DFCA4B2BBD989C000C5A23 /* FinSmartWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E4DFCA392BBD989A000C5A23 /* FinSmartWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E4DFCA512BBDA50A000C5A23 /* FinSmartMediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA502BBDA50A000C5A23 /* FinSmartMediumWidget.swift */; };
+		E4DFCA522BBDA50A000C5A23 /* FinSmartMediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA502BBDA50A000C5A23 /* FinSmartMediumWidget.swift */; };
+		E4DFCA542BBDA53E000C5A23 /* FinSmartSmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA532BBDA53E000C5A23 /* FinSmartSmallWidget.swift */; };
+		E4DFCA552BBDA53E000C5A23 /* FinSmartSmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFCA532BBDA53E000C5A23 /* FinSmartSmallWidget.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4DFCA492BBD989C000C5A23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC143BF92BB6C98B00EEC76C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DFCA382BBD989A000C5A23;
+			remoteInfo = FinSmartWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4DFCA4F2BBD989C000C5A23 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E4DFCA4B2BBD989C000C5A23 /* FinSmartWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D42AD202BBC464E00462888 /* StartDateDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDateDuration.swift; sourceTree = "<group>"; };
@@ -73,6 +108,16 @@
 		E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
 		E4366A672BB6F10000FBC5D1 /* PlatformList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformList.swift; sourceTree = "<group>"; };
 		E4B456EC2BBCFCCB00DCF0DF /* ProjectionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionResult.swift; sourceTree = "<group>"; };
+		E4DFCA392BBD989A000C5A23 /* FinSmartWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinSmartWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DFCA3B2BBD989A000C5A23 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E4DFCA3D2BBD989A000C5A23 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E4DFCA402BBD989B000C5A23 /* FinSmartWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartWidgetBundle.swift; sourceTree = "<group>"; };
+		E4DFCA422BBD989B000C5A23 /* FinSmartWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartWidget.swift; sourceTree = "<group>"; };
+		E4DFCA442BBD989B000C5A23 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		E4DFCA462BBD989C000C5A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4DFCA482BBD989C000C5A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DFCA502BBDA50A000C5A23 /* FinSmartMediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartMediumWidget.swift; sourceTree = "<group>"; };
+		E4DFCA532BBDA53E000C5A23 /* FinSmartSmallWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinSmartSmallWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +125,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DFCA362BBD989A000C5A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DFCA3E2BBD989B000C5A23 /* SwiftUI.framework in Frameworks */,
+				E4DFCA3C2BBD989A000C5A23 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				AC143C032BB6C98B00EEC76C /* FinSmart */,
+				E4DFCA3F2BBD989B000C5A23 /* FinSmartWidget */,
+				E4DFCA3A2BBD989A000C5A23 /* Frameworks */,
 				AC143C022BB6C98B00EEC76C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				AC143C012BB6C98B00EEC76C /* FinSmart.app */,
+				E4DFCA392BBD989A000C5A23 /* FinSmartWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +262,29 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
+		E4DFCA3A2BBD989A000C5A23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4DFCA3B2BBD989A000C5A23 /* WidgetKit.framework */,
+				E4DFCA3D2BBD989A000C5A23 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4DFCA3F2BBD989B000C5A23 /* FinSmartWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E4DFCA532BBDA53E000C5A23 /* FinSmartSmallWidget.swift */,
+				E4DFCA502BBDA50A000C5A23 /* FinSmartMediumWidget.swift */,
+				E4DFCA422BBD989B000C5A23 /* FinSmartWidget.swift */,
+				E4DFCA402BBD989B000C5A23 /* FinSmartWidgetBundle.swift */,
+				E4DFCA442BBD989B000C5A23 /* AppIntent.swift */,
+				E4DFCA462BBD989C000C5A23 /* Assets.xcassets */,
+				E4DFCA482BBD989C000C5A23 /* Info.plist */,
+			);
+			path = FinSmartWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,15 +295,34 @@
 				AC143BFD2BB6C98B00EEC76C /* Sources */,
 				AC143BFE2BB6C98B00EEC76C /* Frameworks */,
 				AC143BFF2BB6C98B00EEC76C /* Resources */,
+				E4DFCA4F2BBD989C000C5A23 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E4DFCA4A2BBD989C000C5A23 /* PBXTargetDependency */,
 			);
 			name = FinSmart;
 			productName = FinSmart;
 			productReference = AC143C012BB6C98B00EEC76C /* FinSmart.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E4DFCA382BBD989A000C5A23 /* FinSmartWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DFCA4C2BBD989C000C5A23 /* Build configuration list for PBXNativeTarget "FinSmartWidgetExtension" */;
+			buildPhases = (
+				E4DFCA352BBD989A000C5A23 /* Sources */,
+				E4DFCA362BBD989A000C5A23 /* Frameworks */,
+				E4DFCA372BBD989A000C5A23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinSmartWidgetExtension;
+			productName = FinSmartWidgetExtension;
+			productReference = E4DFCA392BBD989A000C5A23 /* FinSmartWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -232,11 +331,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					AC143C002BB6C98B00EEC76C = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					E4DFCA382BBD989A000C5A23 = {
+						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
@@ -254,6 +356,7 @@
 			projectRoot = "";
 			targets = (
 				AC143C002BB6C98B00EEC76C /* FinSmart */,
+				E4DFCA382BBD989A000C5A23 /* FinSmartWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +370,14 @@
 				AC9083502BB960120001607F /* platformList.json in Resources */,
 				AC143C092BB6C98C00EEC76C /* Assets.xcassets in Resources */,
 				AC9083582BBA3F040001607F /* loanList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DFCA372BBD989A000C5A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DFCA472BBD989C000C5A23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +411,36 @@
 				ACF2EAB52BBA94DE00869E0D /* PlatformDetailProjection.swift in Sources */,
 				ACBAC89F2BB7CB270013CFB4 /* Settings.swift in Sources */,
 				ACBAC8A22BB7D0070013CFB4 /* FinanceSummary.swift in Sources */,
+				E4DFCA542BBDA53E000C5A23 /* FinSmartSmallWidget.swift in Sources */,
 				E4366A682BB6F10000FBC5D1 /* PlatformList.swift in Sources */,
 				AC143C052BB6C98B00EEC76C /* FinSmartApp.swift in Sources */,
 				AC9083522BB9613C0001607F /* ModelData.swift in Sources */,
+				E4DFCA512BBDA50A000C5A23 /* FinSmartMediumWidget.swift in Sources */,
 				0D42AD252BBC574700462888 /* LoanProjectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4DFCA352BBD989A000C5A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DFCA412BBD989B000C5A23 /* FinSmartWidgetBundle.swift in Sources */,
+				E4DFCA432BBD989B000C5A23 /* FinSmartWidget.swift in Sources */,
+				E4DFCA552BBDA53E000C5A23 /* FinSmartSmallWidget.swift in Sources */,
+				E4DFCA522BBDA50A000C5A23 /* FinSmartMediumWidget.swift in Sources */,
+				E4DFCA452BBD989B000C5A23 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4DFCA4A2BBD989C000C5A23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4DFCA382BBD989A000C5A23 /* FinSmartWidgetExtension */;
+			targetProxy = E4DFCA492BBD989C000C5A23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AC143C0D2BB6C98C00EEC76C /* Debug */ = {
@@ -432,6 +565,7 @@
 		AC143C102BB6C98C00EEC76C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +594,7 @@
 		AC143C112BB6C98C00EEC76C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -485,6 +620,60 @@
 			};
 			name = Release;
 		};
+		E4DFCA4D2BBD989C000C5A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinSmartWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinSmartWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.FinSmart.FinSmartWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4DFCA4E2BBD989C000C5A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinSmartWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinSmartWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.FinSmart.FinSmartWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,6 +691,15 @@
 			buildConfigurations = (
 				AC143C102BB6C98C00EEC76C /* Debug */,
 				AC143C112BB6C98C00EEC76C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4DFCA4C2BBD989C000C5A23 /* Build configuration list for PBXNativeTarget "FinSmartWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DFCA4D2BBD989C000C5A23 /* Debug */,
+				E4DFCA4E2BBD989C000C5A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
