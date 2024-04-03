@@ -10,7 +10,7 @@ import SwiftUI
 struct BottomTabView: View {
     var body: some View {
         NavigationStack{
-            TabView {
+            TabView() {
                 Group {
                     HomeScreen()
                         .tabItem {

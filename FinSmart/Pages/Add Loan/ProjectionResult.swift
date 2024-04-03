@@ -11,16 +11,16 @@ struct ProjectionResult: View {
     var body: some View {
 		NavigationStack {
 			VStack {
-				RoundedRectangle(cornerRadius: 10)
-					.fill(Color.yellow20)
-					.frame(width: 200, height: 200)
-					.padding(.bottom, 10)
+                Image("VinCeriya")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 200, height: 200)
+                    .padding(.bottom, 10)
 				
 				Text("You can apply for your loan!")
-					.font(.custom("SF Pro Rounded", size: 28))
-					.fontWeight(.semibold)
-					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-				
+//					.font(.custom("SF Pro Rounded", size: 28))
+                    .font(.title)
+					.fontWeight(.bold)
 					.padding(.bottom, 18)
 				
 				VStack {

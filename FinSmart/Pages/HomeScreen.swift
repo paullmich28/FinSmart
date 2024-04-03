@@ -14,23 +14,19 @@ struct HomeScreen: View {
     var body: some View {
         NavigationStack {
             VStack {
+                
                 HStack {
-                    Spacer()
+                    Text("Manage Loans")
+                        .font(.title)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     
-                    //                    NavigationLink(destination: NotificationList()){
-                    //                        Image(systemName: "bell")
-                    //                            .resizable()
-                    //                            .aspectRatio(contentMode: .fit)
-                    //                            .frame(width: 20)
-                    //                            .padding(.horizontal, 10)
-                    //                    }
-                    //                    .buttonStyle(PlainButtonStyle())
+                    Spacer()
                     
                     NavigationLink(destination: Settings()){
                         Image(systemName: "gearshape")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 23)
+                            .frame(width: 20)
                             .padding(.horizontal, 10)
                     }
                     .buttonStyle(PlainButtonStyle())
