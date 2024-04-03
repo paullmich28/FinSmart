@@ -26,46 +26,46 @@
         "adminFee": 2.0,
         "limit": 30000000,
         "latenessFee": 5.0,
+        "imageName": "GopayLater",
         "interestRateDuration": "month"
     },
     {
         "id": 4,
         "name": "BCA Pay Later",
         "interestRate": 2.0,
-        "adminFee": 1.0,
-        "limit": 100000000,
-        "latenessFee": 5.0
+        "adminFee": 0.0,
+        "limit": 20000000,
+        "latenessFee": 3.0,
+        "imageName": "BCAPayLater",
+        "interestRateDuration": "month"
     },
     {
         "id": 5,
-        "name": "DolarCepat",
-        "interestRate": 0.2,
-        "adminFee": 2.0,
+        "name": "EasyCash",
+        "interestRate": 0.4,
+        "adminFee": 10.0,
         "limit": 50000000,
-        "latenessFee": 5.0
+        "latenessFee": 5.0,
+        "imageName": "EasyCash",
+        "interestRateDuration": "day"
     },
     {
         "id": 6,
-        "name": "KamauLaku",
-        "interestRate": 0.3,
+        "name": "IndoDana",
+        "interestRate": 3.0,
         "adminFee": 1.0,
-        "limit": 70000000,
-        "latenessFee": 5.0
+        "limit": 30000000,
+        "latenessFee": 5.0,
+        "imageName": "IndoDana",
+        "interestRateDuration": "month"
     },
     {
         "id": 7,
-        "name": "TunaiMu",
+        "name": "PinjamDuit",
         "interestRate": 0.3,
         "adminFee": 2.0,
         "limit": 50000000,
+        "imageName": "PinjamDuit",
         "latenessFee": 5.0
     },
-    {
-        "id": 8,
-        "name": "FinMinus",
-        "interestRate": 0.3,
-        "adminFee": 4.0,
-        "limit": 80000000,
-        "latenessFee": 5.0
-    }
 ]

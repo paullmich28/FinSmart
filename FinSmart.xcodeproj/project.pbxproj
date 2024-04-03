@@ -18,6 +18,7 @@
 		AC36D99C2BBC6BF6009B56A1 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D99B2BBC6BF6009B56A1 /* OnboardingPage.swift */; };
 		AC36D99F2BBC749C009B56A1 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D99E2BBC749C009B56A1 /* Welcome.swift */; };
 		AC36D9A12BBC76AD009B56A1 /* RedirectToIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D9A02BBC76AD009B56A1 /* RedirectToIncome.swift */; };
+		AC36D9A32BBCE7B8009B56A1 /* IncomeOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D9A22BBCE7B8009B56A1 /* IncomeOnboarding.swift */; };
 		AC9083502BB960120001607F /* platformList.json in Resources */ = {isa = PBXBuildFile; fileRef = AC90834F2BB960120001607F /* platformList.json */; };
 		AC9083522BB9613C0001607F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9083512BB9613C0001607F /* ModelData.swift */; };
 		AC9083542BB961A10001607F /* PlatformRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9083532BB961A10001607F /* PlatformRows.swift */; };
@@ -51,6 +52,7 @@
 		AC36D99B2BBC6BF6009B56A1 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		AC36D99E2BBC749C009B56A1 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		AC36D9A02BBC76AD009B56A1 /* RedirectToIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectToIncome.swift; sourceTree = "<group>"; };
+		AC36D9A22BBCE7B8009B56A1 /* IncomeOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IncomeOnboarding.swift; path = "FinSmart/Pages/Onboarding Pages/IncomeOnboarding.swift"; sourceTree = SOURCE_ROOT; };
 		AC90834F2BB960120001607F /* platformList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = platformList.json; sourceTree = "<group>"; };
 		AC9083512BB9613C0001607F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AC9083532BB961A10001607F /* PlatformRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformRows.swift; sourceTree = "<group>"; };
@@ -92,8 +94,10 @@
 		0D42AD262BBC74E400462888 /* Income and Expense */ = {
 			isa = PBXGroup;
 			children = (
+				AC36D9A22BBCE7B8009B56A1 /* IncomeOnboarding.swift */,
 			);
-			path = "Income and Expense";
+			name = "Income and Expense";
+			path = "../../Income and Expense";
 			sourceTree = "<group>";
 		};
 		AC143BF82BB6C98B00EEC76C = {
@@ -115,7 +119,6 @@
 		AC143C032BB6C98B00EEC76C /* FinSmart */ = {
 			isa = PBXGroup;
 			children = (
-				0D42AD262BBC74E400462888 /* Income and Expense */,
 				ACBAC8A42BB7D1D40013CFB4 /* Model */,
 				ACBAC8A32BB7D1B10013CFB4 /* Resources */,
 				AC143C042BB6C98B00EEC76C /* FinSmartApp.swift */,
@@ -139,6 +142,7 @@
 		AC36D99D2BBC7467009B56A1 /* Onboarding Pages */ = {
 			isa = PBXGroup;
 			children = (
+				0D42AD262BBC74E400462888 /* Income and Expense */,
 				AC36D9992BBC6A90009B56A1 /* SplashScreen.swift */,
 				AC36D99B2BBC6BF6009B56A1 /* OnboardingPage.swift */,
 				AC36D99E2BBC749C009B56A1 /* Welcome.swift */,
@@ -279,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBAC8A62BB7D1E80013CFB4 /* Loans.swift in Sources */,
+				AC36D9A32BBCE7B8009B56A1 /* IncomeOnboarding.swift in Sources */,
 				E4366A5E2BB6DE2C00FBC5D1 /* HomeScreen.swift in Sources */,
 				ACBAC8A82BB7D2740013CFB4 /* Platform.swift in Sources */,
 				E4366A602BB6DE2C00FBC5D1 /* ProfileScreen.swift in Sources */,

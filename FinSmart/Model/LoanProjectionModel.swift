@@ -35,13 +35,13 @@ struct LoanProjectionModel{
     }
     
     static func calculateLoanProjection(loanAmount: Int, adminPercent: Double, userPreviousFunds: Int, interest: Double, latenessFee: String, duration: Int) -> LoanProjectionModel{
-        var totalLoan = loanAmount
-        var adminFee = calculateAdminFee(loanAmount, adminPercent)
-        var nettLoan = totalLoan - adminFee
-        var monthlyInstallment = calculateInstallment(totalLoan, interest)
-        var remainingFunds = userPreviousFunds - monthlyInstallment
-        var latenessFee = latenessFee
-        var duration = duration
+        let totalLoan = loanAmount
+        let adminFee = calculateAdminFee(loanAmount, adminPercent)
+        let nettLoan = totalLoan - adminFee
+        let monthlyInstallment = calculateInstallment(totalLoan, interest)
+        let remainingFunds = userPreviousFunds - monthlyInstallment
+        let latenessFee = latenessFee
+        let duration = duration
         
         return LoanProjectionModel(totalLoan: totalLoan, adminFee: adminFee, nettLoan: nettLoan, monthlyInstallment: monthlyInstallment, remainingFunds: remainingFunds, latenessFee: latenessFee, loanDuration: duration)
         
