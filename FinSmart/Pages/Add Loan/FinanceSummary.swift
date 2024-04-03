@@ -134,14 +134,14 @@ struct FinanceSummary: View {
                     Text("Start Loan Projection")
                         .font(.headline)
                         .foregroundStyle(Color.white)
+                        .buttonStyle(PlainButtonStyle())
+                        .padding()
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(RoundedRectangle(cornerRadius: 30)
+                            .fill(Color.primaryBlue)
+                            .shadow(radius: 3)
+                        )
                 }
-                .buttonStyle(PlainButtonStyle())
-                .padding()
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .background(RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.primaryBlue)
-                    .shadow(radius: 3)
-                )
             }
             .padding()
         }

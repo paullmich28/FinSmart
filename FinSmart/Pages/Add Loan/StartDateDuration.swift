@@ -63,18 +63,19 @@ struct StartDateDuration: View {
                 
                 Spacer()
                 
-				NavigationLink(destination: StartDateDuration()) {
-					Text("Continue")
-						.font(.headline)
-						.foregroundStyle(Color.white)
-				}
-				.buttonStyle(PlainButtonStyle())
-				.padding()
-				.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-				.background(RoundedRectangle(cornerRadius: 30)
-					.fill(Color.primaryBlue)
-					.shadow(radius: 3)
-				)
+                NavigationLink(destination: PlatformListProjection()){
+                    Text("Continue")
+                        .font(.title3)
+                        .foregroundStyle(.white)
+                        .fontWeight(.semibold)
+                        .buttonStyle(PlainButtonStyle())
+                        .padding()
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(RoundedRectangle(cornerRadius: 30)
+                            .fill(Color.primaryBlue)
+                            .shadow(radius: 3)
+                        )
+                }
             }
             .padding()
         }

@@ -17,7 +17,7 @@ struct OnboardingPage: View {
                 
                 Welcome(title: "We Calculate the Risks", caption: "We help you assess and calculate the risks of getting a loan from P2P lenders, such as how much you should borrow and the duration of the installment plan. However, the decision is ultimately up to you!")
                 
-                Welcome(title: "We Keep You on Track ", caption: "To avoid unexpected additional fees and late charges, we'll remind you when the due date is approaching.")
+                RedirectToIncome(title: "We Keep You on Track ", caption: "To avoid unexpected additional fees and late charges, we'll remind you when the due date is approaching.")
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .interactive))
