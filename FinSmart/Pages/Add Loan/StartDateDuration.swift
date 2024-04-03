@@ -24,7 +24,7 @@ struct StartDateDuration: View {
                     .fontWeight(.bold)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				
-				ProgressView(value: 3, total: 4)
+				ProgressView(value: 4, total: 4)
 					.padding(.bottom, 16)
                 
 				VStack (alignment: .leading) {
