@@ -42,6 +42,7 @@ struct PlatformDetailProjection: View {
 							VStack {
 								Text("Maximum Limit")
 									.font(.callout)
+									.fontWeight(.medium)
 									.foregroundStyle(Color.yellow130)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 								Text("Rp. \(String(platform.limit.formatted()))")
@@ -60,6 +61,7 @@ struct PlatformDetailProjection: View {
 							VStack {
 								Text("Interest")
 									.font(.callout)
+									.fontWeight(.medium)
 									.foregroundStyle(Color.yellow130)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 								HStack {
@@ -70,6 +72,7 @@ struct PlatformDetailProjection: View {
 										.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 									Text("/ day")
 										.font(.caption)
+										.fontWeight(.medium)
 										.foregroundStyle(Color.yellow160)
 								}
 							}
@@ -77,6 +80,7 @@ struct PlatformDetailProjection: View {
 							VStack {
 								Text("Admin Fee")
 									.font(.callout)
+									.fontWeight(.medium)
 									.foregroundStyle(Color.yellow130)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 								Text("\(String(platform.adminFee))%")
@@ -89,6 +93,7 @@ struct PlatformDetailProjection: View {
 							VStack {
 								Text("Late Fee")
 									.font(.callout)
+									.fontWeight(.medium)
 									.foregroundStyle(Color.yellow130)
 									.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 								

@@ -19,7 +19,7 @@ struct StartDateDuration: View {
     var body: some View {
         NavigationStack {
             VStack{
-                ProgressView(value: 4, total: 5)
+                ProgressView(value: 3, total: 3)
                 
                 Text("Loan Information")
                     .padding([.vertical])

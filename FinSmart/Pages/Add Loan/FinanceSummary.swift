@@ -15,33 +15,35 @@ struct FinanceSummary: View {
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-				ProgressView(value: 1, total: 5)
+				ProgressView(value: 1, total: 4)
 					.padding(.bottom, 16)
                 
-                VStack {
+                HStack {
                     VStack {
                         Text("Income")
                             .font(.callout)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.fontWeight(.medium)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 							.foregroundStyle(Color.yellow130)
                         Text("Rp. 5.000.000")
                             .font(.title2)
                             .fontWeight(.semibold)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 							.foregroundStyle(Color.yellow160)
                     }
-                    
-                    .padding(.bottom, 5)
-                    
+					
+					Divider().frame(maxHeight: 50)
+					
                     VStack {
                         Text("Expenses")
                             .font(.callout)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.fontWeight(.medium)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 							.foregroundStyle(Color.yellow130)
                         Text("Rp. 2.000.000")
                             .font(.title2)
                             .fontWeight(.semibold)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
 							.foregroundStyle(Color.yellow160)
                     }
                 }
@@ -58,6 +60,7 @@ struct FinanceSummary: View {
                     VStack {
                         Text("Your Ongoing Installments")
                             .font(.callout)
+							.fontWeight(.medium)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 							.foregroundStyle(Color.yellow130)
                         Text("Rp. 1.400.000")
@@ -111,6 +114,7 @@ struct FinanceSummary: View {
                 VStack {
                     Text("Net Income")
                         .font(.callout)
+						.fontWeight(.medium)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 						.foregroundStyle(Color.yellow130)
                     Text("Rp. 600.000")
