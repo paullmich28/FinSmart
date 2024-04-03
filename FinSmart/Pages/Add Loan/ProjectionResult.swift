@@ -114,7 +114,7 @@ struct ProjectionResult: View {
 				
 				Spacer()
 				
-				NavigationLink(destination: StartDateDuration()){
+                NavigationLink(destination: BottomTabView().navigationBarBackButtonHidden(true)){
 					Text("Save")
 						.font(.title3)
 						.foregroundStyle(.white)
