@@ -40,7 +40,7 @@ struct FinSmartMediumWidget: View {
 					.font(.caption)
 					.padding(5)
 					.foregroundStyle(Color.blue)
-					.background(RoundedRectangle(cornerRadius: 20).stroke(Color.blue, lineWidth: 1.5))
+					.background(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1.5))
 			}
 			.padding(.bottom, 20)
 			
