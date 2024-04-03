@@ -39,7 +39,7 @@ struct IncomeOnboarding: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: BottomTabView()){
+                    NavigationLink(destination: IncomeExpenseInput().navigationBarBackButtonHidden(true)){
                         Text("Start Assessment")
                             .font(.title3)
                             .foregroundStyle(.white)
