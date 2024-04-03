@@ -34,9 +34,10 @@ struct ProfileScreen: View {
 		ScrollView {
 			VStack (alignment: .leading) {
 				Text("Finance Profile")
-					.font(.title2)
+					.font(.title)
+                    .fontWeight(.bold)
 				Text("This is your finance slices")
-					.font(.footnote)
+                    .font(.subheadline)
 					.padding(.bottom, 20)
 				
 				Chart(totalFinanceData) {

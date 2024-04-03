@@ -7,6 +7,63 @@
 
 import SwiftUI
 
+let userDefaults = UserDefaults.standard
+
+@ViewBuilder
+func decide() -> some View{
+    if userDefaults.object(forKey: "income") != nil && userDefaults.object(forKey: "expenses") != nil{
+        ProfileScreen()
+    }else{
+        IncomeOnboarding().navigationBarBackButtonHidden(true)
+    }
+}
+
+@ViewBuilder
+func summaryCard() -> some View{
+    if userDefaults.object(forKey: "income") != nil && userDefaults.object(forKey: "expenses") != nil{
+        HStack {
+            VStack(alignment: .center){
+                Text("Your Income")
+                    .font(.subheadline)
+                if let income = userDefaults.object(forKey: "income") as? Int {
+                    Text("\(income)")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                } else {
+                    Text("N/A")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+            
+            Divider().frame(width: 0.5, height: 50).overlay(.black)
+            
+            VStack(alignment: .center){
+                Text("Your Expenses")
+                    .font(.subheadline)
+                if let expenses = userDefaults.object(forKey: "expenses") as? Int {
+                    Text("\(expenses)")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                } else {
+                    Text("N/A")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                }
+            }.frame(maxWidth: .infinity, alignment: .center)
+        }
+    }else{
+        Text("Please Fill")
+            .font(.title2)
+            .fontWeight(.semibold)
+        
+        Text("Your Summary!")
+            .font(.title2)
+            .fontWeight(.semibold)
+    }
+}
+
 struct HomeScreen: View {
     @State private var categoriesSelected = "Ongoing"
     var categoriesFilter = ["Ongoing", "Paid", "Completed"]
@@ -14,7 +71,6 @@ struct HomeScreen: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
                 HStack {
                     Text("Manage Loans")
                         .font(.title)
@@ -33,7 +89,7 @@ struct HomeScreen: View {
                 }
                 .padding(.bottom, 15)
                 
-                NavigationLink(destination: ProfileScreen()) {
+                NavigationLink(destination: decide()) {
                     VStack (alignment: .leading) {
                         // Clutter pak
                         HStack{
@@ -57,27 +113,7 @@ struct HomeScreen: View {
                         
                         Divider().frame(width: 320, height: 0.5).overlay(.black)
                         
-                        HStack {
-                            VStack(alignment: .center){
-                                Text("Your Income")
-                                    .font(.subheadline)
-                                Text("IDR 5.000.000")
-                                    .font(.title3)
-                                    .fontWeight(.semibold)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            
-                            Divider().frame(width: 0.5, height: 50).overlay(.black)
-                            
-                            VStack(alignment: .center){
-                                Text("Your Expenses")
-                                    .font(.subheadline)
-                                Text("IDR 2.000.000")
-                                    .font(.title3)
-                                    .fontWeight(.semibold)
-                            }.frame(maxWidth: .infinity, alignment: .center)
-                            
-                        }
+                        summaryCard()
                     }
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10)
