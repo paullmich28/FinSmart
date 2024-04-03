@@ -11,22 +11,24 @@ struct FinanceSummary: View {
     var body: some View {
         NavigationStack {
             VStack {
-				ProgressView(value: 1, total: 5)
-					.padding(.bottom, 16)
                 Text("Finance Summary")
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+				ProgressView(value: 1, total: 5)
+					.padding(.bottom, 16)
                 
                 VStack {
                     VStack {
                         Text("Income")
                             .font(.callout)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.foregroundStyle(Color.yellow130)
                         Text("Rp. 5.000.000")
                             .font(.title2)
                             .fontWeight(.semibold)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.foregroundStyle(Color.yellow160)
                     }
                     
                     .padding(.bottom, 5)
@@ -35,10 +37,12 @@ struct FinanceSummary: View {
                         Text("Expenses")
                             .font(.callout)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.foregroundStyle(Color.yellow130)
                         Text("Rp. 2.000.000")
                             .font(.title2)
                             .fontWeight(.semibold)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.foregroundStyle(Color.yellow160)
                     }
                 }
                 .padding()
@@ -55,34 +59,42 @@ struct FinanceSummary: View {
                         Text("Your Ongoing Installments")
                             .font(.callout)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.foregroundStyle(Color.yellow130)
                         Text("Rp. 1.400.000")
                             .font(.title2)
                             .fontWeight(.semibold)
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+							.foregroundStyle(Color.yellow160)
                     }
                     .padding(.bottom, 16)
                     
                     VStack {
                         HStack {
                             Text("Diamond FreeFire")
+								.foregroundStyle(Color.yellow140)
                             Text("Rp. 400.000")
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+								.foregroundStyle(Color.yellow140)
                         }
                         
                         Divider()
                         
                         HStack {
                             Text("Diamond Mobile Legend")
+								.foregroundStyle(Color.yellow140)
                             Text("Rp. 500.000")
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+								.foregroundStyle(Color.yellow140)
                         }
                         
                         Divider()
                         
                         HStack {
                             Text("Earbuds Pro")
+								.foregroundStyle(Color.yellow140)
                             Text("Rp. 500.000")
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+								.foregroundStyle(Color.yellow140)
                         }
                         
                     }
@@ -100,14 +112,16 @@ struct FinanceSummary: View {
                     Text("Net Income")
                         .font(.callout)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+						.foregroundStyle(Color.yellow130)
                     Text("Rp. 600.000")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+						.foregroundStyle(Color.yellow160)
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.yellow50)
+                    .fill(Color.yellow20)
                     .compositingGroup()
                     .shadow(radius: 3)
                 )

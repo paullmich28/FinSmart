@@ -15,14 +15,12 @@ struct TitleAmount: View {
     var body: some View {
         NavigationStack {
             VStack {
-                ProgressView(value: 2, total: 5)
-                    .padding(.bottom, 16)
                 Text("Loan Overview")
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                
-                    .padding(.bottom, 18)
+				ProgressView(value: 2, total: 5)
+					.padding(.bottom, 16)
                 
                 VStack (alignment: .leading) {
                     Text("What do you want to use the loan for?")

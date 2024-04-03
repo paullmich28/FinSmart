@@ -11,14 +11,12 @@ struct PlatformListProjection: View {
 	var body: some View {
 		NavigationStack {
 			VStack {
-				ProgressView(value: 3, total: 5)
-					.padding(.bottom, 16)
 				Text("Platform List")
 					.font(.title)
 					.fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
 					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-				
-					.padding(.bottom, 18)
+				ProgressView(value: 3, total: 5)
+					.padding(.bottom, 16)
 				
 				ScrollView {
 					GroupBox {
