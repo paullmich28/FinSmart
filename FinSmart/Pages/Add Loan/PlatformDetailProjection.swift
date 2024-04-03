@@ -20,10 +20,12 @@ struct PlatformDetailProjection: View {
 				ProgressView(value: 3, total: 5)
 					.padding(.bottom, 16)
                 
+                Spacer()
+                
                 platform.logo
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 200, height: 200)
+                    .frame(width: 100, height: 100)
 				
 				Text(platform.name)
 					.font(.largeTitle)

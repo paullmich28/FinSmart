@@ -15,7 +15,7 @@ struct PlatformListProjection: View {
 					.font(.title)
 					.fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
 					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-				ProgressView(value: 2, total: 4)
+				ProgressView(value: 2, total: 5)
 					.padding(.bottom, 16)
 				
 				ScrollView {
