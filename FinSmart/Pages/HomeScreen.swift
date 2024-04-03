@@ -17,14 +17,14 @@ struct HomeScreen: View {
                 HStack {
                     Spacer()
                     
-//                    NavigationLink(destination: NotificationList()){
-//                        Image(systemName: "bell")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 20)
-//                            .padding(.horizontal, 10)
-//                    }
-//                    .buttonStyle(PlainButtonStyle())
+                    //                    NavigationLink(destination: NotificationList()){
+                    //                        Image(systemName: "bell")
+                    //                            .resizable()
+                    //                            .aspectRatio(contentMode: .fit)
+                    //                            .frame(width: 20)
+                    //                            .padding(.horizontal, 10)
+                    //                    }
+                    //                    .buttonStyle(PlainButtonStyle())
                     
                     NavigationLink(destination: Settings()){
                         Image(systemName: "gearshape")
@@ -41,10 +41,17 @@ struct HomeScreen: View {
                     VStack (alignment: .leading) {
                         // Clutter pak
                         HStack{
-                            Text("This Month Financial Summary")
-                                .fontWeight(.bold)
-                                .font(.title)
-                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            VStack{
+                                Text("This Month")
+                                    .fontWeight(.bold)
+                                    .font(.title)
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                                Text("Financial Summary")
+                                    .fontWeight(.bold)
+                                    .font(.title)
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            }
+                            
                             
                             VStack(alignment: .trailing){
                                 Image(systemName: "arrow.right")
