@@ -93,7 +93,7 @@ struct StartDateDuration: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: StartDateDuration()){
+                NavigationLink(destination: ProjectionResult()){
                     Text("Continue")
                         .font(.title3)
                         .foregroundStyle(.white)

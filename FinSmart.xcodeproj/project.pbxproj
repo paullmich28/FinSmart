@@ -36,6 +36,7 @@
 		E4366A602BB6DE2C00FBC5D1 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A5C2BB6DE2C00FBC5D1 /* ProfileScreen.swift */; };
 		E4366A652BB6F05800FBC5D1 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */; };
 		E4366A682BB6F10000FBC5D1 /* PlatformList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4366A672BB6F10000FBC5D1 /* PlatformList.swift */; };
+		E4B456ED2BBCFCCC00DCF0DF /* ProjectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B456EC2BBCFCCB00DCF0DF /* ProjectionResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		E4366A5C2BB6DE2C00FBC5D1 /* ProfileScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		E4366A642BB6F05800FBC5D1 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
 		E4366A672BB6F10000FBC5D1 /* PlatformList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformList.swift; sourceTree = "<group>"; };
+		E4B456EC2BBCFCCB00DCF0DF /* ProjectionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				AC08CC962BB84B0100EE7800 /* PlatformListProjection.swift */,
 				ACF2EAB42BBA94DE00869E0D /* PlatformDetailProjection.swift */,
 				0D42AD202BBC464E00462888 /* StartDateDuration.swift */,
+				E4B456EC2BBCFCCB00DCF0DF /* ProjectionResult.swift */,
 			);
 			path = "Add Loan";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				AC36D99F2BBC749C009B56A1 /* Welcome.swift in Sources */,
 				ACF2EAB32BBA8B5A00869E0D /* LoanRows.swift in Sources */,
 				ACF2EAB72BBA991900869E0D /* TitleAmount.swift in Sources */,
+				E4B456ED2BBCFCCC00DCF0DF /* ProjectionResult.swift in Sources */,
 				AC36D99A2BBC6A90009B56A1 /* SplashScreen.swift in Sources */,
 				AC9083542BB961A10001607F /* PlatformRows.swift in Sources */,
 				AC08CC972BB84B0100EE7800 /* PlatformListProjection.swift in Sources */,
