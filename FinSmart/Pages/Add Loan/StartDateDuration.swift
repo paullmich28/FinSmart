@@ -19,14 +19,12 @@ struct StartDateDuration: View {
     var body: some View {
         NavigationStack {
             VStack{
-                ProgressView(value: 3, total: 3)
-                
                 Text("Loan Information")
-                    .padding([.vertical])
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(.bold)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				
+				ProgressView(value: 3, total: 4)
 					.padding(.bottom, 16)
                 
 				VStack (alignment: .leading) {

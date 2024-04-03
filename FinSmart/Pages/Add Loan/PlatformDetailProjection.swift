@@ -17,7 +17,7 @@ struct PlatformDetailProjection: View {
 					.font(.title)
 					.fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
 					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-				ProgressView(value: 3, total: 5)
+				ProgressView(value: 3, total: 4)
 					.padding(.bottom, 16)
                 
                 Spacer()
