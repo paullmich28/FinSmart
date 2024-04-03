@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct StartDateDuration: View {
+	
     @State private var startDate: String = ""
     @State private var duration: Int = 0
     @State private var customDuration: Int = 0
+	
+	@State private var loanTitle: String = ""
+	@State private var loanAmount: String = ""
     
     var body: some View {
         NavigationStack {
@@ -23,8 +27,34 @@ struct StartDateDuration: View {
                     .fontWeight(.bold)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				
-					.padding(.bottom, 18)
+					.padding(.bottom, 16)
                 
+				VStack (alignment: .leading) {
+					Text("What do you want to use the loan for?")
+						.font(.callout)
+					TextField("Loan title", text: $loanTitle)
+						.disableAutocorrection(true)
+						.padding()
+						.overlay(
+							RoundedRectangle(cornerRadius: 10)
+								.stroke(Color.primaryBlue)
+					)
+				}
+				.padding(.bottom, 14)
+				
+				VStack (alignment: .leading) {
+					Text("How much do you want to loan?")
+						.font(.callout)
+					TextField("Loan amount", text: $loanTitle)
+						.disableAutocorrection(true)
+						.padding()
+						.overlay(
+							RoundedRectangle(cornerRadius: 10)
+								.stroke(Color.primaryBlue)
+					)
+				}
+				.padding(.bottom, 26)
+				
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading){
                         DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/,  displayedComponents:  [.date], label: { Text("Start Date") })
@@ -63,7 +93,7 @@ struct StartDateDuration: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: PlatformListProjection()){
+                NavigationLink(destination: StartDateDuration()){
                     Text("Continue")
                         .font(.title3)
                         .foregroundStyle(.white)
