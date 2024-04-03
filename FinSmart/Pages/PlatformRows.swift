@@ -12,8 +12,11 @@ struct PlatformRows: View {
     
     var body: some View {
         HStack {
-			Image(systemName: "text.book.closed")
-				.padding(.trailing, 6)
+            platform.logo
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 30, height: 30)
+                .padding(.trailing, 6)
             Text(platform.name)
 				.font(.title3)
         }

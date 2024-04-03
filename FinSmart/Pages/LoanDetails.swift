@@ -85,23 +85,23 @@ struct LoanDetails: View {
                      */
                     
                     HStack {
-                        VStack (alignment: .leading) {
-                            Text("Installment")
+                        VStack (alignment: .center) {
+                            Text("Amount Left")
                                 .font(.callout)
                             Text("IDR 89.000")
                                 .font(.title3)
                         }
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                         
                         Divider().padding(.horizontal, 10)
                         
-                        VStack (alignment: .trailing) {
-                            Text("For")
+                        VStack (alignment: .center) {
+                            Text("Time Remaining")
                                 .font(.callout)
                             Text("\(String(loan.installmentPeriod)) Months")
                                 .font(.title3)
                         }
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                     }
                 }
             }
@@ -114,23 +114,23 @@ struct LoanDetails: View {
             
             GroupBox{
                 HStack {
-                    VStack (alignment: .leading) {
-                        Text("Has Paid")
+                    VStack (alignment: .center) {
+                        Text("Next Payment")
                             .font(.callout)
-                        Text("IDR 267.000")
+                        Text(loan.startDate, style: .date)
                             .font(.title3)
                     }
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                     
                     Divider().padding(.horizontal, 10)
                     
-                    VStack (alignment: .trailing) {
-                        Text("Remaining")
+                    VStack (alignment: .center) {
+                        Text("Next Due")
                             .font(.callout)
-                        Text("IDR 733.000")
+                        Text(loan.startDate, style: .date)
                             .font(.title3)
                     }
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                 }
             }
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)

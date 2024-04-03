@@ -73,9 +73,9 @@ struct StartDateDuration: View {
                         Picker(selection: $duration, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
                             Text("None").tag(0)
                             Text("1 Month").tag(1)
-                            Text("3 Months").tag(3)
-                            Text("6 Months").tag(6)
-                            Text("12 Months").tag(12)
+                            Text("3 Months").tag(2)
+                            Text("6 Months").tag(3)
+                            Text("12 Months").tag(4)
     //                        Text("Choose...").tag(99)
                         }
                     }.padding()

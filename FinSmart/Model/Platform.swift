@@ -16,8 +16,8 @@ struct Platform: Hashable, Codable, Identifiable{
     var limit: Int
     var latenessFee: Double
     
-//    private var logoUrl: String
-//    var logo: Image{
-//        Image(logoUrl)
-//    }
+    private var imageName: String
+    var logo: Image{
+        Image(imageName)
+    }
 }
