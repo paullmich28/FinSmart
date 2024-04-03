@@ -87,7 +87,7 @@ extension ConfigurationAppIntent {
     }
 }
 
-#Preview(as: .systemMedium) {
+#Preview(as: .systemSmall) {
     FinSmartWidget()
 } timeline: {
     SimpleEntry(date: .now, configuration: .smiley)
