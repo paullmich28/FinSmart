@@ -19,11 +19,11 @@ struct PlatformDetailProjection: View {
 					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
 				ProgressView(value: 3, total: 5)
 					.padding(.bottom, 16)
-				
-				RoundedRectangle(cornerRadius: 5.0)
-					.fill(Color.yellow20)
-					.frame(width: 200, height: 200)
-					.padding()
+                
+                platform.logo
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 200, height: 200)
 				
 				Text(platform.name)
 					.font(.largeTitle)
