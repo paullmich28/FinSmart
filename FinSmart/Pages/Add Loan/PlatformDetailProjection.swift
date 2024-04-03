@@ -17,7 +17,7 @@ struct PlatformDetailProjection: View {
 					.padding(.bottom, 16)
 				
 				RoundedRectangle(cornerRadius: 5.0)
-					.fill(Color.yellow50)
+					.fill(Color.yellow20)
 					.frame(width: 200, height: 200)
 					.padding()
 				
@@ -93,7 +93,7 @@ struct PlatformDetailProjection: View {
 				}
 				.padding()
 				.background(RoundedRectangle(cornerRadius: 10)
-					.fill(Color.yellow50)
+					.fill(Color.yellow20)
 				)
 				
 				/*

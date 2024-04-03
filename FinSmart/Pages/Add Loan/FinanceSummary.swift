@@ -43,7 +43,7 @@ struct FinanceSummary: View {
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.blue10)
+                    .fill(Color.yellow20)
                     .compositingGroup()
                     .shadow(radius: 3)
                 )
@@ -89,7 +89,7 @@ struct FinanceSummary: View {
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.blue10)
+                    .fill(Color.yellow20)
                     .compositingGroup()
                     .shadow(radius: 3)
                 )
